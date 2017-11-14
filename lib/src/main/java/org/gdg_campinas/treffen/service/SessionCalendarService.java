@@ -65,13 +65,13 @@ import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
  */
 public class SessionCalendarService extends IntentService {
     public static final String ACTION_CLEAR_ALL_SESSIONS_CALENDAR =
-            "com.google.samples.apps.iosched.action.CLEAR_ALL_SESSIONS_CALENDAR";
+            "org.gdg_campinas.treffen.action.CLEAR_ALL_SESSIONS_CALENDAR";
     public static final String ACTION_UPDATE_ALL_SESSIONS_CALENDAR =
-            "com.google.samples.apps.iosched.action.UPDATE_ALL_SESSIONS_CALENDAR";
+            "org.gdg_campinas.treffen.action.UPDATE_ALL_SESSIONS_CALENDAR";
     public static final String ACTION_UPDATE_ALL_SESSIONS_CALENDAR_COMPLETED =
-            "com.google.samples.apps.iosched.action.UPDATE_CALENDAR_COMPLETED";
+            "org.gdg_campinas.treffen.action.UPDATE_CALENDAR_COMPLETED";
     public static final String EXTRA_ACCOUNT_NAME =
-            "com.google.samples.apps.iosched.extra.ACCOUNT_NAME";
+            "org.gdg_campinas.treffen.extra.ACCOUNT_NAME";
     // TODO: localize
     private static final String CALENDAR_CLEAR_SEARCH_LIKE_EXPRESSION =
             "%added by Google I/O Android app%";

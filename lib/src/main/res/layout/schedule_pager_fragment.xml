@@ -32,7 +32,7 @@
         android:orientation="horizontal"
         android:visibility="invisible"
         app:layout_anchor="@id/appbar"
-        app:layout_behavior="com.google.samples.apps.iosched.schedule.SchedulePagerFragment$FilterPositionBehavior"
+        app:layout_behavior="org.gdg_campinas.treffen.schedule.SchedulePagerFragment$FilterPositionBehavior"
         tools:visibility="visible">
 
         <TextView

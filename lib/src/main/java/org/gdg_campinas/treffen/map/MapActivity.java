@@ -64,7 +64,7 @@ public class MapActivity extends BaseActivity
     public static final String EXTRA_ROOM = "com.google.android.iosched.extra.ROOM";
 
     public static final String EXTRA_DETACHED_MODE
-            = "com.google.samples.apps.iosched.EXTRA_DETACHED_MODE";
+            = "org.gdg_campinas.treffen.EXTRA_DETACHED_MODE";
 
     public static final String BUNDLE_STATE_MAPVIEW = "mapview";
 
@@ -192,7 +192,7 @@ public class MapActivity extends BaseActivity
      * <p/>
      * For {@link InlineInfoFragment} (that is only displayed on
      * the left of the screen), the full extend of its container layout (including padding) is
-     * passed to the map fragment. For {@link com.google.samples.apps.iosched.map
+     * passed to the map fragment. For {@link org.gdg_campinas.treffen.map
      * .SlideableInfoFragment} (that is only displayed at the bottom of the screen), its actual
      * height is passed through to the map.
      */

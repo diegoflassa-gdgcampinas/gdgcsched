@@ -30,14 +30,14 @@ import android.support.annotation.Nullable;
  * Typically, the {@link Presenter} will call {@link #requestData(QueryEnum, DataQueryCallback)} at
  * least once when created, to load the initial data into the Model. This interface doesn't define
  * how the Model gets its data, but an implementation class {@link ModelWithLoaderManager} is
- * provided, obtaining the data from the {@link com.google.samples.apps.iosched.provider
+ * provided, obtaining the data from the {@link org.gdg_campinas.treffen.provider
  * .ScheduleProvider} by creating a {@link android.support.v4.content.CursorLoader} and then parsing the
  * received {@link android.database.Cursor}. Not all features use this way of loading the data, but
  * a lot of them do.
  * <p/>
  * Additionally, when a {@link UserActionEnum} is received, the model updates both its own data and
  * the stored data, typically by making an update or insert call on the {@link
- * com.google.samples.apps .iosched.provider.ScheduleProvider}.
+ * org.gdg_campinas.treffen.provider.ScheduleProvider}.
  * <p/>
  */
 public interface Model<Q extends QueryEnum, UA extends UserActionEnum> {

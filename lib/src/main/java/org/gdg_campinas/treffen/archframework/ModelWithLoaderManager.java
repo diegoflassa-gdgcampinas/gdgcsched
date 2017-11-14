@@ -61,8 +61,7 @@ public abstract class ModelWithLoaderManager<Q extends QueryEnum, UA extends Use
     protected HashMap<Q, DataQueryCallback<Q>> mDataQueryCallbacks = new HashMap<>();
     /**
      * Map of callbacks, using the id of the user action as key. This is required because some user
-     * actions launch a data query and we can't pass on the {@link com.google.samples.apps
-     * .iosched.archframework.Model.UserActionCallback} to the {@link LoaderManager} callbacks.
+     * actions launch a data query and we can't pass on the {@link org.gdg_campinas.treffen.archframework.Model.UserActionCallback} to the {@link LoaderManager} callbacks.
      * <p/>
      * When the user action leads to a new query being run, the {@link LoaderManager} callbacks
      * provide us with an Integer id. Therefore, we link an Integer id to a callback, and use a

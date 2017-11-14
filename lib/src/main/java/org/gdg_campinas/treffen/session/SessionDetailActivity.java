@@ -35,7 +35,7 @@ import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
 
 /**
  * Displays the details about a session. This Activity is launched via an {@code Intent} with {@link
- * Intent#ACTION_VIEW} and a {@link Uri} built with {@link com.google.samples.apps.iosched
+ * Intent#ACTION_VIEW} and a {@link Uri} built with {@link org.gdg_campinas.treffen
  * .provider.ScheduleContract.Sessions#buildSessionUri(String)}.
  */
 public class SessionDetailActivity extends BaseActivity {

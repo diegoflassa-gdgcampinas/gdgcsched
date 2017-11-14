@@ -26,7 +26,7 @@ import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
  */
 public class Account {
     // An account type, in the form of a domain name
-    public static final String ACCOUNT_TYPE = "com.google.samples.apps.iosched";
+    public static final String ACCOUNT_TYPE = "org.gdg_campinas.treffen";
     // The account name
     public static final String ACCOUNT_NAME = "Sync Account";
 

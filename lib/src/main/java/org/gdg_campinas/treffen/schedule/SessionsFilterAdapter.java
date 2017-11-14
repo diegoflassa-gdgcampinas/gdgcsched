@@ -45,7 +45,7 @@ import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 public class SessionsFilterAdapter extends Adapter<ViewHolder> {
 
     private static final String TAG = LogUtils.makeLogTag(SessionsFilterAdapter.class);
-    private static final String STATE_FILTERS = "com.google.samples.apps.iosched.STATE_FILTERS";
+    private static final String STATE_FILTERS = "org.gdg_campinas.treffen.STATE_FILTERS";
 
     private static final int TYPE_TYPE = 0;
     private static final int TYPE_TOPIC = 1;

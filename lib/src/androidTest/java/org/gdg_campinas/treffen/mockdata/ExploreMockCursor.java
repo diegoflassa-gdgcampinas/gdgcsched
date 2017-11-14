@@ -21,7 +21,7 @@ import org.gdg_campinas.treffen.util.TimeUtils;
 
 /**
  * This has methods to create stub cursors for explore feature. To generate different mock cursors,
- * refer to {@link com.google.samples.apps.iosched.debug
+ * refer to {@link org.gdg_campinas.treffen.debug
  * .OutputMockData#generateMatrixCursorCodeForCurrentRow(Cursor)}.
  */
 public class ExploreMockCursor {

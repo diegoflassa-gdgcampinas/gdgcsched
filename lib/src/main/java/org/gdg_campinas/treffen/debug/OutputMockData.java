@@ -43,10 +43,10 @@ public class OutputMockData {
      * This generates code, as a String, to create a {@link android.database.MatrixCursor} with a
      * row with the same data as the current row of the {@code cursor}. This can be used to easily
      * create cursor with mock data in integration tests (in mockdata package), by logging the
-     * output of this method in {@link com.google.samples.apps.iosched.archframework
+     * output of this method in {@link org.gdg_campinas.treffen.archframework
      * .ModelWithLoaderManager#onLoadFinished(QueryEnum, Cursor)} and copying the logged string into
      * a method that returns a {@link MatrixCursor} in a class in {@link
-     * com.google.samples.apps.iosched.mockdata}.
+     * org.gdg_campinas.treffen.mockdata}.
      */
     public static String generateMatrixCursorCodeForCurrentRow(Cursor cursor) {
         String output = "";
@@ -90,7 +90,7 @@ public class OutputMockData {
      * {@link ScheduleModel
      * .LoadScheduleDataListener#onDataLoaded(ArrayList)}
      * and copying the logged string into a method that returns a {@link ArrayList<ScheduleItem>} in
-     * a class in {@link com.google.samples.apps.iosched.mockdata}.
+     * a class in {@link org.gdg_campinas.treffen.mockdata}.
      */
     public static String generateScheduleItemCode(ArrayList<ScheduleItem> items) {
         String output = "";

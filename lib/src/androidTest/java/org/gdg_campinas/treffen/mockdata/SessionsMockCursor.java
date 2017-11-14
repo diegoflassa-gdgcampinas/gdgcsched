@@ -21,7 +21,7 @@ import android.database.MatrixCursor;
 
 /**
  * This has methods to create stub cursors for sessions. To generate different mock cursors, refer
- * to {@link com.google.samples.apps.iosched.debug
+ * to {@link org.gdg_campinas.treffen.debug
  * .OutputMockData#generateMatrixCursorCodeForCurrentRow(Cursor)}.
  */
 public class SessionsMockCursor {

@@ -86,7 +86,7 @@ public class MatchersHelper {
      * the descendant view is expected to be a {@link TextView}. This is used when there is a
      * certain randomness in the elements shown in a collection view, even with mock data.
      *
-     * @see com.google.samples.apps.iosched.videolibrary.VideoLibraryModel
+     * @see org.gdg_campinas.treffen.videolibrary.VideoLibraryModel
      */
     public static String getTextForViewGroupDescendant(
             final Matcher<View> parentViewWithMultipleChildren, final int indexOfDescendant,
@@ -128,7 +128,7 @@ public class MatchersHelper {
      * collection view, even with mock data, but we want to check the number of elements inside the
      * parent view.
      *
-     * @see com.google.samples.apps.iosched.explore.ExploreIOActivityTest
+     * @see org.gdg_campinas.treffen.explore.ExploreIOActivityTest
      */
     public static int getNumberOfDescendantsForViewGroupDescendant(
             final Matcher<View> parentViewWithMultipleChildren,

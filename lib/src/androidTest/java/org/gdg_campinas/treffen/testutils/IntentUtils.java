@@ -41,7 +41,7 @@ public class IntentUtils {
      * Check the intent to launch the video with {@code videoId} is fired. Depending on whether
      * YouTube is installed and available, a different intent is launched, unless {@code forceWeb}
      * is true (for use in features where the app always launches the youtube url, eg {@link
-     * com.google.samples.apps.iosched .videolibrary .VideoLibraryActivity}).
+     * org.gdg_campinas.treffen .videolibrary .VideoLibraryActivity}).
      */
     public static void checkVideoIntentIsFired(String videoId, Activity activity,
             boolean forceWeb) {

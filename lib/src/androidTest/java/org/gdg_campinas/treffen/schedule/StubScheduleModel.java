@@ -27,10 +27,10 @@ import org.gdg_campinas.treffen.model.ScheduleItem;
 import java.util.ArrayList;
 
 /**
- * A stub {@link ScheduleModel}, to be injected using {@link com.google.samples.apps.iosched
+ * A stub {@link ScheduleModel}, to be injected using {@link org.gdg_campinas.treffen
  * .injection.Injection}. It overrides {@link ScheduleModel#updateData(DataQueryCallback)} to bypass the {@link
  * ScheduleHelper#getScheduleDataAsync(LoadScheduleDataListener, long, long, TagFilterHolder)} mechanism. Use the
- * classes in {@link com.google.samples.apps.iosched.mockdata} to provide the mock data.
+ * classes in {@link org.gdg_campinas.treffen.mockdata} to provide the mock data.
  */
 public class StubScheduleModel extends ScheduleModel {
 

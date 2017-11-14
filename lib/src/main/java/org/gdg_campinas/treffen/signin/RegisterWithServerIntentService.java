@@ -26,13 +26,13 @@ import org.gdg_campinas.treffen.fcm.ServerUtilities;
  * Registers the users account ID and device ID pair with the server.
  */
 public class RegisterWithServerIntentService extends IntentService {
-    public static final String ACTION_REGISTER = "com.google.samples.apps.iosched." +
+    public static final String ACTION_REGISTER = "org.gdg_campinas.treffen." +
             "signin.action." + "register";
 
-    public static final String ACTION_UNREGISTER = "com.google.samples.apps.iosched." +
+    public static final String ACTION_UNREGISTER = "org.gdg_campinas.treffen." +
             "signin.action." + "unregister";
 
-    public static final String EXTRA_ACCOUNT_ID = "com.google.samples.apps.iosched.signin.extra." +
+    public static final String EXTRA_ACCOUNT_ID = "org.gdg_campinas.treffen.signin.extra." +
             "account_id";
 
     public RegisterWithServerIntentService() {

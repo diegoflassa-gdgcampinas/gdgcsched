@@ -27,7 +27,7 @@ import org.gdg_campinas.treffen.navigation.NavigationModel.NavigationUserActionE
 
 /**
  * This abstract class implements both {@link UpdatableView} and {@link AppNavigationView}, without
- * any specific UI implementation details. This uses the {@link com.google.samples.apps.iosched
+ * any specific UI implementation details. This uses the {@link org.gdg_campinas.treffen
  * .archframework} for getting its data and processing user actions. Some methods which are UI
  * specific are left abstract. Extend this class for full navigation functionality.
  */

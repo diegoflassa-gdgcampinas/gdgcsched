@@ -25,9 +25,9 @@ import org.gdg_campinas.treffen.archframework.QueryEnum;
 import java.util.HashMap;
 
 /**
- * A stub {@link SessionFeedbackModel}, to be injected using {@link com.google.samples.apps.iosched
+ * A stub {@link SessionFeedbackModel}, to be injected using {@link org.gdg_campinas.treffen
  * .injection.Injection}. It overrides {@link #requestData(QueryEnum, DataQueryCallback)} to bypass
- * the loader manager mechanism. Use the classes in {@link com.google.samples.apps.iosched.mockdata}
+ * the loader manager mechanism. Use the classes in {@link org.gdg_campinas.treffen.mockdata}
  * to provide the stub cursors.
  */
 public class StubSessionFeedbackModel extends SessionFeedbackModel {

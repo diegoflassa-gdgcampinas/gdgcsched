@@ -65,14 +65,14 @@ public class ScheduleActivity extends BaseActivity implements ScheduleViewParent
      * ScheduleSingleDayFragment}.
      */
     public static final String ARG_CONFERENCE_DAY_INDEX =
-            "com.google.samples.apps.iosched.ARG_CONFERENCE_DAY_INDEX";
+            "org.gdg_campinas.treffen.ARG_CONFERENCE_DAY_INDEX";
 
     /**
      * Int extra used to indicate a specific conference day should shown initially when the screen
      * is launched. Conference days are zero-indexed.
      */
     public static final String EXTRA_CONFERENCE_DAY =
-            "com.google.samples.apps.iosched.EXTRA_CONFERENCE_DAY_INDEX";
+            "org.gdg_campinas.treffen.EXTRA_CONFERENCE_DAY_INDEX";
 
     /**
      * String extra used to specify a tag to filter sessions on the schedule when the screen
@@ -82,9 +82,9 @@ public class ScheduleActivity extends BaseActivity implements ScheduleViewParent
 
     // The saved instance state filters
     private static final String STATE_FILTER_TAGS =
-            "com.google.samples.apps.iosched.myschedule.STATE_FILTER_TAGS";
+            "org.gdg_campinas.treffen.myschedule.STATE_FILTER_TAGS";
     private static final String STATE_CURRENT_URI =
-            "com.google.samples.apps.iosched.myschedule.STATE_CURRENT_URI";
+            "org.gdg_campinas.treffen.myschedule.STATE_CURRENT_URI";
 
     /**
      * Interval that a timer will redraw the UI during the conference, so that time sensitive

@@ -27,9 +27,9 @@ import org.gdg_campinas.treffen.testutils.StubModelHelper;
 import java.util.HashMap;
 
 /**
- * A stub {@link SessionDetailModel}, to be injected using {@link com.google.samples.apps.iosched
+ * A stub {@link SessionDetailModel}, to be injected using {@link org.gdg_campinas.treffen
  * .injection.ModelProvider}. It overrides {@link #requestData(QueryEnum, DataQueryCallback)} to
- * bypass the loader manager mechanism. Use the classes in {@link com.google.samples.apps.iosched
+ * bypass the loader manager mechanism. Use the classes in {@link org.gdg_campinas.treffen
  * .mockdata}
  * to provide the stub cursors.
  */

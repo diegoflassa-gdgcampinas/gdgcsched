@@ -62,23 +62,23 @@ public class SessionAlarmService extends IntentService {
     private static final String TAG = LogUtils.makeLogTag(SessionAlarmService.class);
 
     public static final String ACTION_NOTIFY_SESSION =
-            "com.google.samples.apps.iosched.action.NOTIFY_SESSION";
+            "org.gdg_campinas.treffen.action.NOTIFY_SESSION";
     public static final String ACTION_NOTIFY_SESSION_FEEDBACK =
-            "com.google.samples.apps.iosched.action.NOTIFY_SESSION_FEEDBACK";
+            "org.gdg_campinas.treffen.action.NOTIFY_SESSION_FEEDBACK";
     private static final String ACTION_SCHEDULE_STARRED_BLOCK =
-            "com.google.samples.apps.iosched.action.SCHEDULE_STARRED_BLOCK";
+            "org.gdg_campinas.treffen.action.SCHEDULE_STARRED_BLOCK";
     public static final String ACTION_SCHEDULE_ALL_STARRED_BLOCKS =
-            "com.google.samples.apps.iosched.action.SCHEDULE_ALL_STARRED_BLOCKS";
+            "org.gdg_campinas.treffen.action.SCHEDULE_ALL_STARRED_BLOCKS";
     public static final String EXTRA_SESSION_START =
-            "com.google.samples.apps.iosched.extra.SESSION_START";
+            "org.gdg_campinas.treffen.extra.SESSION_START";
     public static final String EXTRA_SESSION_END =
-            "com.google.samples.apps.iosched.extra.SESSION_END";
+            "org.gdg_campinas.treffen.extra.SESSION_END";
     public static final String EXTRA_SESSION_ALARM_OFFSET =
-            "com.google.samples.apps.iosched.extra.SESSION_ALARM_OFFSET";
+            "org.gdg_campinas.treffen.extra.SESSION_ALARM_OFFSET";
     public static final String EXTRA_SESSION_ID =
-            "com.google.samples.apps.iosched.extra.SESSION_ID";
+            "org.gdg_campinas.treffen.extra.SESSION_ID";
     public static final String EXTRA_SESSION_TITLE =
-            "com.google.samples.apps.iosched.extra.SESSION_TITLE";
+            "org.gdg_campinas.treffen.extra.SESSION_TITLE";
 
     public static final int NOTIFICATION_ID = 100;
     public static final int FEEDBACK_NOTIFICATION_ID = 101;
@@ -95,7 +95,7 @@ public class SessionAlarmService extends IntentService {
     private static final long UNDEFINED_ALARM_OFFSET = -1;
     private static final long UNDEFINED_VALUE = -1;
     public static final String ACTION_NOTIFICATION_DISMISSAL
-            = "com.google.sample.apps.iosched.ACTION_NOTIFICATION_DISMISSAL";
+            = "org.gdg_campinas.treffen.ACTION_NOTIFICATION_DISMISSAL";
     public static final String KEY_SESSION_ID = "session-id";
     private static final String KEY_SESSION_NAME = "session-name";
     private static final String KEY_SPEAKER_NAME = "speaker-name";
@@ -217,7 +217,7 @@ public class SessionAlarmService extends IntentService {
                 SessionAlarmService.class);
         // Setting data to ensure intent's uniqueness for different session start times.
         notifIntent.setData(
-                new Uri.Builder().authority("com.google.samples.apps.iosched")
+                new Uri.Builder().authority("org.gdg_campinas.treffen")
                         .path(String.valueOf(sessionStart)).build()
         );
         notifIntent.putExtra(SessionAlarmService.EXTRA_SESSION_START, sessionStart);

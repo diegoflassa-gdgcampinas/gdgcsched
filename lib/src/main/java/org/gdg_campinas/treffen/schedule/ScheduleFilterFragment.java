@@ -34,7 +34,7 @@ import org.gdg_campinas.treffen.util.AnalyticsHelper;
 
 public class ScheduleFilterFragment extends Fragment implements LoaderCallbacks<Cursor> {
 
-    public static final String FILTER_TAG = "com.google.samples.apps.iosched.FILTER_TAG";
+    public static final String FILTER_TAG = "org.gdg_campinas.treffen.FILTER_TAG";
 
     private static final int TAG_METADATA_TOKEN = 0x8;
 

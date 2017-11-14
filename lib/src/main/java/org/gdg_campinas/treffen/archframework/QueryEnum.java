@@ -32,7 +32,7 @@ public interface QueryEnum {
     /**
      * @return the projection for the query. The fields in the projection are defined in the {@link
      * ScheduleContract}. This field may be null if the
-     * query is not to be carried on the {@link com.google.samples.apps.iosched.provider
+     * query is not to be carried on the {@link org.gdg_campinas.treffen.provider
      * .ScheduleProvider}
      */
     public String[] getProjection();

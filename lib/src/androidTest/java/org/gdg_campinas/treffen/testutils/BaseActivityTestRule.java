@@ -31,7 +31,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * An {@link IntentsTestRule} bypassing the {@link com.google.samples.apps.iosched.welcome
+ * An {@link IntentsTestRule} bypassing the {@link org.gdg_campinas.treffen.welcome
  * .WelcomeActivity}. If passed in the constructor, the {@code model} is injected into the app.
  */
 public class BaseActivityTestRule<T extends Activity> extends IntentsTestRule<T> {

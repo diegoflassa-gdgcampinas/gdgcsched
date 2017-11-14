@@ -55,7 +55,7 @@ import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 public final class ServerUtilities {
     private static final String TAG = LogUtils.makeLogTag("FCMs");
 
-    private static final String PREFERENCES = "com.google.samples.apps.iosched.fcm";
+    private static final String PREFERENCES = "org.gdg_campinas.treffen.fcm";
     private static final String PROPERTY_REGISTERED_TS = "registered_ts";
     private static final String KEY_DEVICE_ID = "device_id";
     private static final String KEY_USER_ID = "user_id";

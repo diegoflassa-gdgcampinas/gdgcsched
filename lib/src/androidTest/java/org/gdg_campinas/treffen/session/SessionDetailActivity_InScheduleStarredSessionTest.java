@@ -33,7 +33,7 @@ import org.gdg_campinas.treffen.Config;
 import org.gdg_campinas.treffen.feedback.SessionFeedbackActivity;
 import org.gdg_campinas.treffen.mockdata.SpeakersMockCursor;
 import org.gdg_campinas.treffen.testutils.BaseActivityTestRule;
-//import com.google.samples.apps.iosched.explore.ExploreSessionsActivity;
+//import org.gdg_campinas.treffen.explore.ExploreSessionsActivity;
 import org.gdg_campinas.treffen.lib.R;
 import org.gdg_campinas.treffen.mockdata.SessionsMockCursor;
 import org.gdg_campinas.treffen.mockdata.TagMetadataMockCursor;

@@ -17,7 +17,7 @@ package org.gdg_campinas.treffen.navigation;
 import android.support.test.runner.AndroidJUnit4;
 import android.test.suitebuilder.annotation.LargeTest;
 
-//import com.google.samples.apps.iosched.explore.ExploreIOActivity;
+//import org.gdg_campinas.treffen.explore.ExploreIOActivity;
 import org.gdg_campinas.treffen.lib.R;
 import org.gdg_campinas.treffen.testutils.NavigationUtils;
 

@@ -85,15 +85,15 @@ public class MyIOActivity extends BaseActivity implements
 
     // intent extras used to show an arbitrary message sent via FCM
     public static final String EXTRA_DIALOG_TITLE
-            = "com.google.samples.apps.iosched.EXTRA_DIALOG_TITLE";
+            = "org.gdg_campinas.treffen.EXTRA_DIALOG_TITLE";
     public static final String EXTRA_DIALOG_MESSAGE
-            = "com.google.samples.apps.iosched.EXTRA_DIALOG_MESSAGE";
+            = "org.gdg_campinas.treffen.EXTRA_DIALOG_MESSAGE";
     public static final String EXTRA_DIALOG_YES
-            = "com.google.samples.apps.iosched.EXTRA_DIALOG_YES";
+            = "org.gdg_campinas.treffen.EXTRA_DIALOG_YES";
     public static final String EXTRA_DIALOG_NO
-            = "com.google.samples.apps.iosched.EXTRA_DIALOG_NO";
+            = "org.gdg_campinas.treffen.EXTRA_DIALOG_NO";
     public static final String EXTRA_DIALOG_URL
-            = "com.google.samples.apps.iosched.EXTRA_DIALOG_URL";
+            = "org.gdg_campinas.treffen.EXTRA_DIALOG_URL";
 
     /** How often the registration check should be refreshed for logged-in users. */
     private static final long REG_CHECK_REFRESH_PERIOD = TimeUtils.HOUR * 12;
