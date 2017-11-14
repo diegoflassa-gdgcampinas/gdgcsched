@@ -25,13 +25,13 @@
 
     <fragment
         android:id="@+id/main_content"
-        android:name="com.google.samples.apps.iosched.feed.FeedFragment"
+        android:name="org.google.samples.apps.gdgcsched.feed.FeedFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         tools:layout="@layout/feed_fragment" />
 
-    <com.google.samples.apps.iosched.ui.widget.BadgedBottomNavigationView
+    <org.google.samples.apps.gdgcsched.ui.widget.BadgedBottomNavigationView
         android:id="@+id/bottom_navigation"
         style="@style/Widget.IOSched.BottomNavigationView"
         android:layout_width="match_parent"

@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:237695054204:android:66c485c6a5187053",
         "android_client_info": {
-          "package_name": "com.google.samples.apps.iosched"
+          "package_name": "org.gdg_campinas.treffen"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "237695054204-qg3donchhbgmi2s8fnejdgg94c6ugl4r.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.google.samples.apps.iosched",
+            "package_name": "org.gdg_campinas.treffen",
             "certificate_hash": "e499e9081b4ddf63788f4dfb4e7018c54f93188b"
           }
         },

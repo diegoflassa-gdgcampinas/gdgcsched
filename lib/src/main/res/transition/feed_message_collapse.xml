@@ -42,7 +42,7 @@
     </changeBounds>
 
     <transition
-        class="com.google.samples.apps.iosched.ui.transition.Rotate"
+        class="org.google.samples.apps.gdgcsched.ui.transition.Rotate"
         android:duration="200">
         <targets>
             <target android:targetId="@id/expand_icon" />

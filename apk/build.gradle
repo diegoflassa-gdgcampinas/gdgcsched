@@ -38,7 +38,7 @@ android {
 
     defaultConfig {
         proguardFiles getDefaultProguardFile('proguard-android.txt'), file('proguard-project.txt')
-        applicationId "com.google.samples.apps.iosched"
+        applicationId "org.gdg_campinas.treffen"
         versionCode = Integer.valueOf("" + appVersionCode).intValue()
         versionName "${appVersionName}"
         minSdkVersion rootProject.ext.minSdkVersion

@@ -93,7 +93,7 @@
             android:paddingStart="@dimen/padding_normal"
             android:text="@string/setup_wifi" />
 
-        <com.google.samples.apps.iosched.info.event.EventView
+        <org.google.samples.apps.gdgcsched.info.event.EventView
             android:id="@+id/sandbox_event"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
             app:eventIcon="@drawable/ic_sandbox"
             app:eventTitle="@string/event_sandbox_title" />
 
-        <com.google.samples.apps.iosched.info.event.EventView
+        <org.google.samples.apps.gdgcsched.info.event.EventView
             android:id="@+id/codelabs_event"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
             app:mapLinkUri="@string/view_codelabs_map_url"
             app:scheduleFilterTag="@string/codelabs_filter_tag" />
 
-        <com.google.samples.apps.iosched.info.event.EventView
+        <org.google.samples.apps.gdgcsched.info.event.EventView
             android:id="@+id/officehours_event"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -124,7 +124,7 @@
             app:mapLinkUri="@string/view_officehours_map_url"
             app:scheduleFilterTag="@string/officehours_filter_tag" />
 
-        <com.google.samples.apps.iosched.info.event.EventView
+        <org.google.samples.apps.gdgcsched.info.event.EventView
             android:id="@+id/afterhours_event"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

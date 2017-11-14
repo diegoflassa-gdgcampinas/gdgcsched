@@ -91,7 +91,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.google.samples.apps.iosched.ui.widget.CustomRatingBar
+            <org.google.samples.apps.gdgcsched.ui.widget.CustomRatingBar
                 android:id="@+id/rating_bar_0"
                 style="@style/Widget.IOSched.FeedbackRatingBar"
                 android:layout_width="wrap_content"
@@ -133,7 +133,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/rating_bad" />
 
-            <com.google.samples.apps.iosched.ui.widget.CustomRatingBar
+            <org.google.samples.apps.gdgcsched.ui.widget.CustomRatingBar
                 android:id="@+id/session_relevant_feedback_bar"
                 style="@style/Widget.IOSched.FeedbackRatingBar"
                 android:layout_width="wrap_content"
@@ -173,7 +173,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/relevance_poor" />
 
-            <com.google.samples.apps.iosched.ui.widget.CustomRatingBar
+            <org.google.samples.apps.gdgcsched.ui.widget.CustomRatingBar
                 android:id="@+id/content_feedback_bar"
                 style="@style/Widget.IOSched.FeedbackRatingBar"
                 android:layout_width="wrap_content"
@@ -213,7 +213,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/content_poor" />
 
-            <com.google.samples.apps.iosched.ui.widget.CustomRatingBar
+            <org.google.samples.apps.gdgcsched.ui.widget.CustomRatingBar
                 android:id="@+id/speaker_feedback_bar"
                 style="@style/Widget.IOSched.FeedbackRatingBar"
                 android:layout_width="wrap_content"

@@ -23,13 +23,13 @@
 
     <fragment
         android:id="@+id/main_content"
-        android:name="com.google.samples.apps.iosched.info.InfoPagerFragment"
+        android:name="org.google.samples.apps.gdgcsched.info.InfoPagerFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="56dp"
         tools:layout="@layout/info_pager_frag" />
 
-    <com.google.samples.apps.iosched.ui.widget.BadgedBottomNavigationView
+    <org.google.samples.apps.gdgcsched.ui.widget.BadgedBottomNavigationView
         android:id="@+id/bottom_navigation"
         style="@style/Widget.IOSched.BottomNavigationView"
         android:layout_width="match_parent"

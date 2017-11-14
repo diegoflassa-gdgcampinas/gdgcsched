@@ -21,7 +21,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:onClick="dismiss"
-    tools:context="com.google.samples.apps.iosched.ui.SearchActivity"
+    tools:context="org.google.samples.apps.gdgcsched.ui.SearchActivity"
     tools:ignore="MergeRootFrame">
 
     <!-- we use this scrim view rather than a semi-opaque window background so that we can

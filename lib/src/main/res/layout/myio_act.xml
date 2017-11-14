@@ -22,13 +22,13 @@
 
     <fragment
         android:id="@+id/my_content"
-        android:name="com.google.samples.apps.iosched.myio.MyIOFragment"
+        android:name="org.google.samples.apps.gdgcsched.myio.MyIOFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         tools:layout="@layout/myio_fragment" />
 
-    <com.google.samples.apps.iosched.ui.widget.BadgedBottomNavigationView
+    <org.google.samples.apps.gdgcsched.ui.widget.BadgedBottomNavigationView
         android:id="@+id/bottom_navigation"
         style="@style/Widget.IOSched.BottomNavigationView"
         android:layout_width="match_parent"

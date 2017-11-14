@@ -42,7 +42,7 @@
         <arcMotion />
     </changeBounds>
 
-    <transition class="com.google.samples.apps.iosched.ui.transition.Rotate">
+    <transition class="org.google.samples.apps.gdgcsched.ui.transition.Rotate">
         <targets>
             <target android:targetId="@id/expand_icon" />
         </targets>

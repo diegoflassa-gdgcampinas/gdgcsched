@@ -44,7 +44,7 @@
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:titleEnabled="false">
 
-            <com.google.samples.apps.iosched.ui.widget.AspectRatioView
+            <org.google.samples.apps.gdgcsched.ui.widget.AspectRatioView
                 android:id="@+id/session_photo_container"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -84,7 +84,7 @@
                     tools:visibility="visible" />
                 <!-- paddingTop offsets the text+drawablePadding to center the image -->
 
-            </com.google.samples.apps.iosched.ui.widget.AspectRatioView>
+            </org.google.samples.apps.gdgcsched.ui.widget.AspectRatioView>
 
             <!-- We don't use a normal Toolbar because we need to access the title and icons -->
             <LinearLayout
@@ -296,7 +296,7 @@
 
     </android.support.v4.widget.NestedScrollView>
 
-    <com.google.samples.apps.iosched.ui.widget.ReserveButton
+    <org.google.samples.apps.gdgcsched.ui.widget.ReserveButton
         android:id="@+id/reserve"
         android:layout_width="@dimen/main_content_width"
         android:layout_height="?actionBarSize"
@@ -304,7 +304,7 @@
         app:layout_insetEdge="@integer/reserve_inset_edge" />
 
     <!-- FAB -->
-    <com.google.samples.apps.iosched.ui.widget.CheckableFloatingActionButton
+    <org.google.samples.apps.gdgcsched.ui.widget.CheckableFloatingActionButton
         android:id="@+id/add_schedule_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

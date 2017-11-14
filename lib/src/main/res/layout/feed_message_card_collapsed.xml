@@ -123,7 +123,7 @@
         app:layout_constraintTop_toBottomOf="@id/title"
         tools:src="@drawable/ic_session" />
 
-    <com.google.samples.apps.iosched.ui.widget.HtmlTextView
+    <org.google.samples.apps.gdgcsched.ui.widget.HtmlTextView
         android:id="@id/description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
