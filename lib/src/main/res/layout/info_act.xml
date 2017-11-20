@@ -23,13 +23,13 @@
 
     <fragment
         android:id="@+id/main_content"
-        android:name="org.google.samples.apps.gdgcsched.info.InfoPagerFragment"
+        android:name="org.gdg_campinas.treffen.info.InfoPagerFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="56dp"
         tools:layout="@layout/info_pager_frag" />
 
-    <org.google.samples.apps.gdgcsched.ui.widget.BadgedBottomNavigationView
+    <org.gdg_campinas.treffen.ui.widget.BadgedBottomNavigationView
         android:id="@+id/bottom_navigation"
         style="@style/Widget.IOSched.BottomNavigationView"
         android:layout_width="match_parent"

@@ -25,7 +25,7 @@
     android:orientation="horizontal"
     android:padding="@dimen/padding_normal">
 
-    <org.google.samples.apps.gdgcsched.ui.widget.BezelImageView
+    <org.gdg_campinas.treffen.ui.widget.BezelImageView
         android:id="@+id/speaker_image"
         android:layout_width="@dimen/speaker_image_size"
         android:layout_height="@dimen/speaker_image_size"

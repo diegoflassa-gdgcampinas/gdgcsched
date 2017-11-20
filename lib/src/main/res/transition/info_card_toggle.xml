@@ -17,7 +17,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:interpolator="@android:interpolator/fast_out_slow_in">
 
-    <transition class="org.google.samples.apps.gdgcsched.ui.transition.Rotate">
+    <transition class="org.gdg_campinas.treffen.ui.transition.Rotate">
         <targets>
             <target android:targetId="@id/expand_icon" />
         </targets>

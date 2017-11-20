@@ -20,7 +20,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="org.google.samples.apps.gdgcsched.debug.DebugActivity">
+    tools:context="org.gdg_campinas.treffen.debug.DebugActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
 
     <fragment
         android:id="@+id/debug_fragment"
-        android:name="org.google.samples.apps.gdgcsched.debug.DebugFragment"
+        android:name="org.gdg_campinas.treffen.debug.DebugFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />

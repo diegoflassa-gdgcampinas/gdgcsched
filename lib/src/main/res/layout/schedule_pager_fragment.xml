@@ -67,7 +67,7 @@
         android:focusable="true"
         android:focusableInTouchMode="true" />
 
-    <org.google.samples.apps.gdgcsched.ui.widget.MultiSwipeRefreshLayout
+    <org.gdg_campinas.treffen.ui.widget.MultiSwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="@dimen/main_content_width"
         android:layout_height="match_parent"
@@ -82,9 +82,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-    </org.google.samples.apps.gdgcsched.ui.widget.MultiSwipeRefreshLayout>
+    </org.gdg_campinas.treffen.ui.widget.MultiSwipeRefreshLayout>
 
-    <org.google.samples.apps.gdgcsched.ui.widget.BadgedBottomNavigationView
+    <org.gdg_campinas.treffen.ui.widget.BadgedBottomNavigationView
         android:id="@+id/bottom_navigation"
         style="@style/Widget.IOSched.BottomNavigationView"
         android:layout_width="match_parent"

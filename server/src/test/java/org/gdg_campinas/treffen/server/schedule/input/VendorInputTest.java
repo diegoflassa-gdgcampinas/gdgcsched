@@ -26,7 +26,7 @@ import org.gdg_campinas.treffen.server.schedule.input.fetcher.VendorAPIEntityFet
 import org.gdg_campinas.treffen.server.schedule.model.InputJsonKeys;
 import org.gdg_campinas.treffen.server.schedule.input.fetcher.EntityFetcher;
 import org.gdg_campinas.treffen.server.schedule.server.input.VendorDynamicInput;
-import org.google.iosched.test.TestHelper;
+import org.gdg_campinas.treffen.test.TestHelper;
 
 import org.junit.Before;
 import org.junit.Test;

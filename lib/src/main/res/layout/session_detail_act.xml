@@ -19,7 +19,7 @@
 <fragment
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:name="org.google.samples.apps.gdgcsched.session.SessionDetailFragment"
+    android:name="org.gdg_campinas.treffen.session.SessionDetailFragment"
     android:id="@+id/session_detail_frag"
     android:layout_width="match_parent"
     android:layout_height="match_parent"

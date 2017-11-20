@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.google.iosched.test;
+package org.gdg_campinas.treffen.test;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;

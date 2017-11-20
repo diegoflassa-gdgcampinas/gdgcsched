@@ -57,7 +57,7 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:src="@drawable/ic_nav_info" />
 
-        <org.google.samples.apps.gdgcsched.ui.widget.HtmlTextView
+        <org.gdg_campinas.treffen.ui.widget.HtmlTextView
             android:id="@+id/event_content_description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

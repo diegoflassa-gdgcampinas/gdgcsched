@@ -63,7 +63,7 @@
         android:maxSdkVersion="18" />
 
     <application
-        android:name="org.google.samples.apps.gdgcsched.AppApplication"
+        android:name="org.gdg_campinas.treffen.AppApplication"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"

@@ -26,7 +26,7 @@ import org.gdg_campinas.treffen.server.schedule.input.fetcher.RemoteFilesEntityF
 import org.gdg_campinas.treffen.server.schedule.model.InputJsonKeys;
 import org.gdg_campinas.treffen.server.schedule.model.JsonDataSources;
 import org.gdg_campinas.treffen.server.schedule.server.input.ExtraInput;
-import org.google.iosched.test.TestHelper;
+import org.gdg_campinas.treffen.test.TestHelper;
 
 import org.junit.Before;
 import org.junit.Test;

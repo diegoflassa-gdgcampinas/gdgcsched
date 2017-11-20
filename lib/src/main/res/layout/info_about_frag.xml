@@ -32,31 +32,31 @@
         android:paddingTop="@dimen/spacing_normal"
         android:showDividers="middle">
 
-        <org.google.samples.apps.gdgcsched.info.CollapsibleCard
+        <org.gdg_campinas.treffen.info.CollapsibleCard
             android:id="@+id/stayInformedCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardTitle="@string/faq_stay_informed_title" />
 
-        <org.google.samples.apps.gdgcsched.info.CollapsibleCard
+        <org.gdg_campinas.treffen.info.CollapsibleCard
             android:id="@+id/contentFormatsCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardTitle="@string/faq_content_formats_title" />
 
-        <org.google.samples.apps.gdgcsched.info.CollapsibleCard
+        <org.gdg_campinas.treffen.info.CollapsibleCard
             android:id="@+id/liveStreamRecordingsCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardTitle="@string/faq_livestream_and_recordings_title" />
 
-        <org.google.samples.apps.gdgcsched.info.CollapsibleCard
+        <org.gdg_campinas.treffen.info.CollapsibleCard
             android:id="@+id/attendanceProTipsCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardTitle="@string/faq_attendance_pro_tips_title" />
 
-        <org.google.samples.apps.gdgcsched.info.CollapsibleCard
+        <org.gdg_campinas.treffen.info.CollapsibleCard
             android:id="@+id/additionalInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

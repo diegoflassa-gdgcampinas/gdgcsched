@@ -23,7 +23,7 @@ a different bootstrap service (that refreshes all data from an external file at 
 See the /doc/MAP.md readme file for further details. -->
 
     <application
-        android:name="org.gdg_campinas.treffen.AppApplication"
+        android:name=".AppApplication"
         android:label="@string/mapeditor_label"
         tools:replace="label">
 

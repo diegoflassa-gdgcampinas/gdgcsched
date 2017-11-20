@@ -21,11 +21,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="org.google.samples.apps.gdgcsched.schedule.ScheduleActivity">
+    tools:context="org.gdg_campinas.treffen.schedule.ScheduleActivity">
 
     <fragment
         android:id="@+id/my_content"
-        android:name="org.google.samples.apps.gdgcsched.schedule.SchedulePagerFragment"
+        android:name="org.gdg_campinas.treffen.schedule.SchedulePagerFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout="@layout/schedule_pager_fragment" />
@@ -33,7 +33,7 @@
     <!-- Filter drawer -->
     <fragment
         android:id="@+id/filter_drawer"
-        android:name="org.google.samples.apps.gdgcsched.schedule.ScheduleFilterFragment"
+        android:name="org.gdg_campinas.treffen.schedule.ScheduleFilterFragment"
         android:layout_width="@dimen/drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="end"

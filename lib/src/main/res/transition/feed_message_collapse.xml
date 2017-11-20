@@ -42,7 +42,7 @@
     </changeBounds>
 
     <transition
-        class="org.google.samples.apps.gdgcsched.ui.transition.Rotate"
+        class="org.gdg_campinas.treffen.ui.transition.Rotate"
         android:duration="200">
         <targets>
             <target android:targetId="@id/expand_icon" />

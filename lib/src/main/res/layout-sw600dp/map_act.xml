@@ -71,7 +71,7 @@
 
     </android.support.v7.widget.CardView>
 
-    <org.google.samples.apps.gdgcsched.ui.widget.BadgedBottomNavigationView
+    <org.gdg_campinas.treffen.ui.widget.BadgedBottomNavigationView
         android:id="@+id/bottom_navigation"
         style="@style/Widget.IOSched.BottomNavigationView"
         android:layout_width="match_parent"

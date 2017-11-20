@@ -66,12 +66,12 @@ To build the app:
 1. Choose Build > Make Project in Android Studio or run the following
     command in the project root directory:
    ```
-    ./gradlew clean assembleDebug
+    ./gradlew clean assembleNormalDebug
    ```
 1. To install on your test device:
 
    ```
-    ./gradlew installDebug
+    ./gradlew installNormalDebug
    ```
 1. [Refer to 'Navigating the Android app' doc](NAVIGATING_CODE.md).
 
@@ -99,9 +99,9 @@ that appears in the URL, indicated by ########### below:
     Write down this project ID number you will need it soon.
 
 3. In the APIs and Auth section, enable these APIs:
-    - Drive API
-    - Google Cloud Messaging for Android
-    - Google Maps Android API v2
+    - Google Drive API
+    - Firebase Cloud Messaging API ( substitui Google Cloud Messaging for Android )
+    - Google Maps Android API
     - Google+ API
     - YouTube Data API v3
 

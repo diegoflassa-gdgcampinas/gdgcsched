@@ -21,7 +21,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="@dimen/welcome_content_padding"
-    tools:context="org.google.samples.apps.gdgcsched.welcome.NotificationsFragment">
+    tools:context="org.gdg_campinas.treffen.welcome.NotificationsFragment">
 
     <TextView
         android:id="@+id/title"

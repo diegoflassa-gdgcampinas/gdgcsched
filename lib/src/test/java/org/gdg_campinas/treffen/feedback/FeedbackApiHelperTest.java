@@ -77,11 +77,11 @@ public class FeedbackApiHelperTest {
     @Test
     public void sendSessionToServer_SuccessfulConnection_ReturnsTrue() {
         // Given a list of questions and successful http connection
-        HashMap<String, String> questions = new HashMap<>();
-        questions.put("Q10", "b2ce21ff-2cbe-e411-b87f-00155d5066d7");
-        questions.put("Q20", "9fce21ff-2cbe-e411-b87f-00155d5066d7");
-        questions.put("Q30", "a5ce21ff-2cbe-e411-b87f-00155d5066d7");
-        questions.put("Q40", "acce21ff-2cbe-e411-b87f-00155d5066d7");
+        HashMap<Integer, Integer> questions = new HashMap<>();
+        questions.put("Q10".hashCode(), "b2ce21ff-2cbe-e411-b87f-00155d5066d7".hashCode());
+        questions.put("Q20".hashCode(), "9fce21ff-2cbe-e411-b87f-00155d5066d7".hashCode());
+        questions.put("Q30".hashCode(), "a5ce21ff-2cbe-e411-b87f-00155d5066d7".hashCode());
+        questions.put("Q40".hashCode(), "acce21ff-2cbe-e411-b87f-00155d5066d7".hashCode());
 
         initWithStubbedSuccessfulConnection();
 
@@ -98,7 +98,7 @@ public class FeedbackApiHelperTest {
         mThrown.expect(IllegalStateException.class);
 
         // When ran with a null session id
-        boolean success = mFeedbackApiHelper.sendSessionToServer(null, new HashMap<String, String>());
+        boolean success = mFeedbackApiHelper.sendSessionToServer(null, new HashMap<Integer, Integer>());
 
         // Then ISE is thrown
     }
@@ -109,7 +109,7 @@ public class FeedbackApiHelperTest {
         mThrown.expect(IllegalStateException.class);
 
         // When ran with an empty session id
-        boolean success = mFeedbackApiHelper.sendSessionToServer("", new HashMap<String, String>());
+        boolean success = mFeedbackApiHelper.sendSessionToServer("", new HashMap<Integer, Integer>());
 
         // Then ISE is thrown
     }
@@ -132,7 +132,7 @@ public class FeedbackApiHelperTest {
 
         // When ran with a valid session id and empty list of questions
         boolean success = mFeedbackApiHelper.sendSessionToServer(FAKE_SESSION_ID,
-                new HashMap<String, String>());
+                new HashMap<Integer, Integer>());
 
         // Then ISE is thrown
     }
