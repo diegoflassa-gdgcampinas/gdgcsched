@@ -1,6 +1,6 @@
-# Map data in iosched
+# Map data in treffen ( inherited from iosched )
 
-The maps feature in the iosched app uses the Google Maps Android API v2. It is
+The maps feature in the treffen app uses the Google Maps Android API v2. It is
 using data sent from a data source together with the scheduling data. This
 allows the map data (ie. names of rooms, location of markers and labels) to be
 updated on the fly by updating the remote data and pushing it to the device.

@@ -1,0 +1,78 @@
+##
+## Properties for the build which can be overridden locally.
+##
+## This allows build keys to be set where the app is being built in
+## a gradle.properties override. See;
+##
+##https://docs.gradle.org/current/userguide/build_environment.html
+##
+## for more information on the overriding system.
+
+
+
+
+###############################################################################
+# App variables.
+###############################################################################
+
+# The store file location is relative to the module base, and so needs to go
+# up one level of the directory hierarchy to get to the project root.
+
+## TODO: Supply the release kaystore credentials for your project
+android_releasekey_storefile = ../apk/debug.keystore
+android_releasekey_storePassword = android
+android_releasekey_keyAlias = androiddebugkey
+android_releasekey_keyPassword = android
+
+
+
+
+###############################################################################
+# Prod/Staging/Test/Dev Environment Variables.
+###############################################################################
+
+# API manifest URLs. These URLs provide the data files to load to download data for the app.
+# When data needs to change the underlying data file is published as a new revision and the manifest
+# is updated with the new file name.
+staging_api_manifest_endpoint = https://storage.googleapis.com/n4llejo4ff9hie5f6pcpb4v1ibxhqfuc/manifest_v1.json
+production_api_manifest_endpoint = https://storage.googleapis.com/n4llejo4ff9hie5f6pcpb4v1ibxhqfuc/manifest_v1.json
+
+# FCM server endpoints to checkin with.
+
+staging_fcm_server_endpoint = https://io2017-backend-dev.appspot.com/gcm
+production_fcm_server_endpoint = https://io2017-backend-dev.appspot.com/gcm
+
+# Website hostname
+staging_website_host_name = googleio-staging.appspot.com
+production_website_host_name = events.google.com
+
+#API key for FCM
+## TODO: Supply FCM API key and sender ID for your project
+fcm_api_key = UNDEFINED
+fcm_sender_id = UNDEFINED
+
+# Used for generic API method calls to Google services.
+## TODO: Supply Google API key and sender ID for your project
+oauth2_creds_api_key = UNDEFINED
+
+## TODO: Supply YouTube API key and sender ID for your project
+youtube_api_key = UNDEFINED
+
+## TODO: Supply Maps API key for your project, note that the key depends on your signing ceriticate
+#Maps API key for the release key store
+maps_api_key_releasestore = UNDEFINED
+# Maps API key for the debug key store
+maps_api_key_debugstore = UNDEFINED
+
+metadata_url =  http://url-caster.appspot.com/resolve-scan
+
+# Hard-coded time for displaying the "%conference_hashtag% request" panel on the Social activity. We only display
+# this panel a few days before the start of the conference.
+show_treffen_request_social_panel_time = 2016-01-01T00:00:00-03:00
+
+default_web_client_id = UNDEFINED
+
+
+# Feedback API
+## TODO: Supply Feedback API endpoint and implement FeedbackApiHelper
+feedback_api_endpoint = UNDEFINED

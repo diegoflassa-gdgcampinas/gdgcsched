@@ -63,16 +63,16 @@ ModelWithLoaderManager are [unit][PIT] [tested][MLMT], so individual features do
 + **Features use injection to load their model**: The [ModelProvider][MP] allows for stub models to be 
 injected, thus enabling us to write deterministic UI tests. 
 
-[QE]: ../android/src/main/java/com/google/samples/apps/iosched/archframework/QueryEnum.java
-[UAE]: ../android/src/main/java/com/google/samples/apps/iosched/archframework/UserActionEnum.java
-[M]: ../android/src/main/java/com/google/samples/apps/iosched/archframework/Model.java
-[V]: ../android/src/main/java/com/google/samples/apps/iosched/archframework/UpdatableView.java
-[P]: ../android/src/main/java/com/google/samples/apps/iosched/archframework/Presenter.java
-[PI]: ../android/src/main/java/com/google/samples/apps/iosched/archframework/PresenterImpl.java
-[MLM]: ../android/src/main/java/com/google/samples/apps/iosched/archframework/ModelWithLoaderManager.java
-[PIT]: ../android/src/test/java/com/google/samples/apps/iosched/archframework/PresenterImplTest.java
-[MLMT]: ../android/src/test/java/com/google/samples/apps/iosched/archframework/ModelWithLoaderManagerImplTest.java
-[MP]: ../android/src/main/java/com/google/samples/apps/iosched/injection/ModelProvider.java
+[QE]: ../android/src/main/java/com/google/samples/apps/treffen/archframework/QueryEnum.java
+[UAE]: ../android/src/main/java/com/google/samples/apps/treffen/archframework/UserActionEnum.java
+[M]: ../android/src/main/java/com/google/samples/apps/treffen/archframework/Model.java
+[V]: ../android/src/main/java/com/google/samples/apps/treffen/archframework/UpdatableView.java
+[P]: ../android/src/main/java/com/google/samples/apps/treffen/archframework/Presenter.java
+[PI]: ../android/src/main/java/com/google/samples/apps/treffen/archframework/PresenterImpl.java
+[MLM]: ../android/src/main/java/com/google/samples/apps/treffen/archframework/ModelWithLoaderManager.java
+[PIT]: ../android/src/test/java/com/google/samples/apps/treffen/archframework/PresenterImplTest.java
+[MLMT]: ../android/src/test/java/com/google/samples/apps/treffen/archframework/ModelWithLoaderManagerImplTest.java
+[MP]: ../android/src/main/java/com/google/samples/apps/treffen/injection/ModelProvider.java
 
 ![IOsched MVP framework](images/iosched-mvp-framework.png "IOsched MVP framework")
 

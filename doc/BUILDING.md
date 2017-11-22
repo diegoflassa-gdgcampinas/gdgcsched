@@ -13,42 +13,46 @@
     limitations under the License.
 
 
-# How to build IOSched
+# How to build [Treffen](https://github.com/gdg-campinas/treffen) ( [I/O Sched](https://github.com/google/iosched) based app )
 
-Note: while these instructions allow you to build iosched, much of the
+Note: while these instructions allow you to build treffen, much of the
 functionality that depends on server APIs won't work because in order to
 do that you need to configure your own project in Google Developer
 Console, create API keys, etc. For more information about what you
 need to set up, refer to [Server side setup](#server-side-setup).
 
 This is a Gradle-based project that works best with
-[Android Studio](http://developer.android.com/sdk/installing/studio.html)
+[Android Studio](https://developer.android.com/studio/index.html)
 
 To build the app:
 
 1. Install the following software:
-       - Android SDK:
-         http://developer.android.com/sdk/index.html
-       - Gradle:
-         http://www.gradle.org/downloads
-       - Android Studio:
-         http://developer.android.com/sdk/installing/studio.html
 
-1. Run the Android SDK Manager by pressing the SDK Manager toolbar button
-   in Android Studio or by running the 'android' command in a terminal
-   window.
+    * Gradle: http://www.gradle.org/downloads
+    * Android Studio: https://developer.android.com/studio/install.html
+
+1. Run the Android SDK Manager using one of the options below.
+   
+    * Android Studio Welcome Screen (Recommended)<br>
+      In the bottom right of the screen, click in "Configure -> SDK Manager"
+    * Android Studio Project Screen (Recommended)<br>
+      In the bottom right of the screen, click in "Tools -> Android -> SDK Manager"
+    * [sdkmanager](https://developer.android.com/studio/command-line/sdkmanager.html) (Advanced)<br>
+      In the console, go to the "ANDROID_SDK_HOME\tools\bin" folder, and use the "sdkmanager" command line tool.
+      Please refer its [guide page](https://developer.android.com/studio/command-line/sdkmanager.html) info for more information
 
 1. In the Android SDK Manager, ensure that the following are installed,
    and are updated to the latest available version:
-       - Tools > Android SDK Platform-tools
-       - Tools > Android SDK Tools
-       - Tools > Android SDK Build-tools
-       - Tools > Android SDK Build-tools
-       - Android 6.0 > SDK Platform (API 23)
-       - Extras > Android Support Repository
-       - Extras > Android Support Library
-       - Extras > Google Play services
-       - Extras > Google Repository
+    * SDK Platforms Tab:
+      * Android 6.0 (Marshmallow) > Android SDK Platform 23
+	* SDK Tools Tab:
+      * Android SDK Build-Tools
+      * Android SDK Platform-tools
+      * Android SDK Tools	
+      * Android Support Library
+      * Google Play services
+      * Support Repository > Android Support Repository
+      * Support Repository > Google Repository
 
 1. Create a file in your working directory called local.properties,
    containing the path to your Android SDK. Use local.properties.example as a
@@ -56,12 +60,16 @@ To build the app:
 
 1. Import the project in Android Studio:
 
-    1. Press File > Import Project
-    2. Navigate to and choose the settings.gradle file in this project
-    3. Press OK
+   1. Using one of the windows below:
+      * Welcome Screen: Click in "Import project (Gradle, Eclipse ADT, etc.)"
+      * Project Screen: Press "File" > "New" > "Import Project..."
+   3. Navigate to and choose the settings.gradle file in this project
+   4. Press OK
 
 1. Add your debug keystore to the project (save it as android/debug.keystore),
-    or modify the build.gradle file to point to your key.
+   or modify the build.gradle file to point to your key.
+   The keystore properties can be changed in the "gradle.properties" file
+   in the "android_debugkey_xxx" and android_releasekey_xxx" keys
 
 1. Choose Build > Make Project in Android Studio or run the following
     command in the project root directory:
