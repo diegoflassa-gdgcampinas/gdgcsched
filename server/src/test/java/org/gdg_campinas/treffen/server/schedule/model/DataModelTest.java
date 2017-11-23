@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import org.google.iosched.test.TestHelper;
+import org.gdg_campinas.treffen.test.TestHelper;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -51,7 +51,7 @@ public class DataModelTest {
   }
 
   /**
-   * Test method for {@link com.google.iosched.model.DataExtractor#extractFromDataSources(com.google.iosched.model.JsonDataSources)}.
+   * Test method for {@link org.gdg_campinas.treffen.server.schedule.model.DataExtractor#extractFromDataSources(org.gdg_campinas.treffen.server.schedule.model.JsonDataSources)}.
    */
   @Test
   public void testExtractFromDataSources() {
@@ -62,7 +62,7 @@ public class DataModelTest {
   }
 
   /**
-   * Test method for {@link com.google.iosched.model.DataExtractor#extractRooms(com.google.iosched.model.JsonDataSources)}.
+   * Test method for {@link org.gdg_campinas.treffen.server.schedule.model.DataExtractor#extractRooms(org.gdg_campinas.treffen.server.schedule.model.JsonDataSources)}.
    */
   @Test
   public void testExtractRooms() {

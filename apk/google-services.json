@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "362621453541",
+    "firebase_url": "https://treffen-server.firebaseio.com",
+    "project_id": "treffen-server",
+    "storage_bucket": "treffen-server.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362621453541:android:3075cf68bb2d7267",
+        "android_client_info": {
+          "package_name": "org.gdg_campinas.treffen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362621453541-anrq5h4gggeq44pnhk8ajpfhkm5tlkdl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.gdg_campinas.treffen",
+            "certificate_hash": "5d1ddac8f49e7bee5d3c901251ead5649f24f681"
+          }
+        },
+        {
+          "client_id": "362621453541-r00ifrgjhtdi64uc8tpcf72715k6ren6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5sFuX1psniDWHyzf8jo6ymocrVhO8w-4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362621453541-r00ifrgjhtdi64uc8tpcf72715k6ren6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362621453541:android:9db2c0fcb8a17fa3",
+        "android_client_info": {
+          "package_name": "org.gdg_campinas.treffen.mapeditor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362621453541-m8iikvgn4kk5bq3d1m1eml3id3ap2ndt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.gdg_campinas.treffen.mapeditor",
+            "certificate_hash": "5d1ddac8f49e7bee5d3c901251ead5649f24f681"
+          }
+        },
+        {
+          "client_id": "362621453541-r00ifrgjhtdi64uc8tpcf72715k6ren6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5sFuX1psniDWHyzf8jo6ymocrVhO8w-4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362621453541-r00ifrgjhtdi64uc8tpcf72715k6ren6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

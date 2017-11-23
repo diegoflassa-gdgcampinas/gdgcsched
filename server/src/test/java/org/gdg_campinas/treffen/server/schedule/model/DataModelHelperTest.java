@@ -21,7 +21,7 @@ import static org.junit.Assert.assertEquals;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 import org.gdg_campinas.treffen.server.schedule.model.validator.Converters;
-import org.google.iosched.test.TestHelper;
+import org.gdg_campinas.treffen.test.TestHelper;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -39,7 +39,7 @@ public class DataModelHelperTest {
   }
 
   /**
-   * Test method for {@link com.google.iosched.model.DataModelHelper#set(com.google.gson.JsonObject, java.lang.Enum, com.google.gson.JsonObject, java.lang.Enum, com.google.iosched.model.validator.Converter)}.
+   * Test method for {@link org.gdg_campinas.treffen.server.schedule.model.DataModelHelper#set(com.google.gson.JsonObject, java.lang.Enum, com.google.gson.JsonObject, java.lang.Enum, org.gdg_campinas.treffen.server.schedule.model.validator.Converter)}.
    * @throws IOException
    */
   @Test
@@ -54,7 +54,7 @@ public class DataModelHelperTest {
   }
 
   /**
-   * Test method for {@link com.google.iosched.model.DataModelHelper#set(com.google.gson.JsonObject, java.lang.Enum, com.google.gson.JsonObject, java.lang.Enum, com.google.iosched.model.validator.Converter)}.
+   * Test method for {@link org.gdg_campinas.treffen.server.schedule.model.DataModelHelper#set(com.google.gson.JsonObject, java.lang.Enum, com.google.gson.JsonObject, java.lang.Enum, org.gdg_campinas.treffen.server.schedule.model.validator.Converter)}.
    * @throws IOException
    */
   @Test
@@ -68,7 +68,7 @@ public class DataModelHelperTest {
   }
 
   /**
-   * Test method for {@link com.google.iosched.model.DataModelHelper#set(com.google.gson.JsonObject, java.lang.Enum, com.google.gson.JsonObject, java.lang.Enum, com.google.iosched.model.validator.Converter)}.
+   * Test method for {@link org.gdg_campinas.treffen.server.schedule.model.DataModelHelper#set(com.google.gson.JsonObject, java.lang.Enum, com.google.gson.JsonObject, java.lang.Enum, org.gdg_campinas.treffen.server.schedule.model.validator.Converter)}.
    * @throws IOException
    */
   @Test
@@ -83,7 +83,7 @@ public class DataModelHelperTest {
 
 
   /**
-   * Test method for {@link com.google.iosched.model.DataModelHelper#set(com.google.gson.JsonObject, java.lang.Enum, com.google.gson.JsonObject, java.lang.Enum, com.google.iosched.model.validator.Converter)}.
+   * Test method for {@link org.gdg_campinas.treffen.server.schedule.model.DataModelHelper#set(com.google.gson.JsonObject, java.lang.Enum, com.google.gson.JsonObject, java.lang.Enum, org.gdg_campinas.treffen.server.schedule.model.validator.Converter)}.
    * @throws IOException
    */
   @Test
@@ -97,7 +97,7 @@ public class DataModelHelperTest {
   }
 
   /**
-   * Test method for {@link com.google.iosched.model.DataModelHelper#maybeFixPropertyName(java.lang.String)}.
+   * Test method for {@link org.gdg_campinas.treffen.server.schedule.model.DataModelHelper#maybeFixPropertyName(java.lang.String)}.
    */
   @Test
   public void testMaybeFixPropertyName() {
