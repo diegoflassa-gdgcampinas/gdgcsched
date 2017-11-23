@@ -226,13 +226,13 @@ dependencies {
     // Backend server
     implementation project(path: ':server', configuration: 'android-endpoints')
 
-    implementation ('com.google.api-client:google-api-client:1.22.0') {
+    implementation ('com.google.api-client:google-api-client:1.23.0') {
         // Dependency org.apache.httpcomponents:httpclient:4.0.1
         // conflicts with the internal version provided by Android.
         exclude group: 'org.apache.httpcomponents', module:'httpclient'
     }
 
-    implementation ('com.google.api-client:google-api-client-android:1.22.0') {
+    implementation ('com.google.api-client:google-api-client-android:1.23.0') {
         // Dependency org.apache.httpcomponents:httpclient:4.0.1
         // conflicts with the internal version provided by Android.
         exclude group: 'org.apache.httpcomponents', module:'httpclient'
@@ -257,38 +257,44 @@ dependencies {
     implementation(name: 'design-release-32b1f74', ext: 'aar')
 
     // JSON utility library.
-    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
 
     // YouTube client library
     implementation files('../third_party/youtube/libs/YouTubeAndroidPlayerApi.jar')
 
     // Glide library, used to handle asynchronous loading and caching of images.
+	// TODO: Migration to 4.3.1 will need some code adaptation
+	//See https://github.com/bumptech/glide
     implementation 'com.github.bumptech.glide:glide:3.7.0'
 
     implementation files('../third_party/disklrucache/libs/disklrucache-2.0.2.jar')
-    implementation files('../third_party/basic-http-client/libs/basic-http-client-android-0.88.jar')
+	implementation 'com.turbomanage.basic-http-client:http-client-android:0.89'
+
     // SVG processor for the Conference Map overlay.
     implementation(name: 'svg-android-2.0.7-20150515.214425-1', ext: 'jar')
 
     implementation(name: 'StickyHeaders-release', ext: 'aar')
 
     // Google Maps Android API utility library
+	// TODO: Migration to 0.5+ will need some code adaptation
     implementation('com.google.maps.android:android-maps-utils:0.4+') {
         exclude group: "com.google.android.gms"
     }
 
-    implementation 'com.google.android:flexbox:0.2.6'
+	// TODO: Migration to 3.1.0 will need some code adaptation
+    implementation 'com.google.android:flexbox:0.2.7'
 
     // Added to resolve conflicts between the app build and the test build. The app build resolves
     // the jsr305 dependency to version 1.3.9, but in the test build the espresso-core dependency
     // resolves jsr305 to 2.0.1. Declaring a implementation dependency on jsr305 2.0.1 will ensure 2.0.1 or
     // greater is used for both app and test builds.
-    implementation 'com.google.code.findbugs:jsr305:2.0.1'
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
 
-    implementation ('uk.co.chrisjenx:calligraphy:2.2.0') {
+    implementation ('uk.co.chrisjenx:calligraphy:2.3.0') {
         exclude group: 'com.android.support:design'
     }
-    implementation 'com.airbnb.android:lottie:2.0.0-beta4'
+	// TODO: Migration to 2.3.0 will need some code adaptation
+    implementation 'com.airbnb.android:lottie:2.2.0'
 
     // Firebase libraries
     implementation "com.google.firebase:firebase-core:${google_play_services_client_library_version}"
@@ -300,7 +306,7 @@ dependencies {
     implementation "com.google.firebase:firebase-config:${google_play_services_client_library_version}"
     implementation "com.google.firebase:firebase-crash:${google_play_services_client_library_version}"
 
-    implementation "org.apache.commons:commons-lang3:3.5"
+    implementation "org.apache.commons:commons-lang3:3.7"
 
     normalDebugImplementation "com.squareup.leakcanary:leakcanary-android:${leak_canary_version}"
     normalQualityassuranceImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
@@ -314,10 +320,10 @@ dependencies {
     targetSdk22QualityassuranceImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
     targetSdk22ReleaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
 
-    androidTestImplementation 'com.android.support.test:runner:0.5'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-intents:2.2.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-contrib:2.2.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-intents:3.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-contrib:3.0.1'
     // Resolve conflicts between main and test APK:
     androidTestImplementation "com.android.support:support-annotations:${android_support_lib_version}"
     androidTestImplementation "com.android.support:recyclerview-v7:${android_support_lib_version}"
@@ -325,10 +331,10 @@ dependencies {
 
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.hamcrest:hamcrest-core:1.3'
-    testImplementation 'org.mockito:mockito-core:1.10.8'
-    testImplementation 'org.powermock:powermock-api-mockito:1.6.4'
-    testImplementation 'org.powermock:powermock-module-junit4-rule-agent:1.6.4'
-    testImplementation 'org.powermock:powermock-module-junit4-rule:1.6.4'
-    testImplementation 'org.powermock:powermock-module-junit4:1.6.4'
-    testImplementation 'org.json:json:20090211'
+    testImplementation 'org.mockito:mockito-core:1.12.0'
+    testImplementation 'org.powermock:powermock-api-mockito:1.7.3'
+    testImplementation 'org.powermock:powermock-module-junit4-rule-agent:1.7.3'
+    testImplementation 'org.powermock:powermock-module-junit4-rule:1.7.3'
+    testImplementation 'org.powermock:powermock-module-junit4:1.7.3'
+    testImplementation 'org.json:json:20171018'
 }
