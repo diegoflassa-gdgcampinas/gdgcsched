@@ -35,7 +35,6 @@ import java.util.logging.Logger;
  *
  * This will need to be modified to use a custom backend for your event.
  */
-@SuppressWarnings("unused")
 public class VendorAPIEntityFetcher implements EntityFetcher {
   static Logger LOG = Logger.getLogger(VendorAPIEntityFetcher.class.getName());
 

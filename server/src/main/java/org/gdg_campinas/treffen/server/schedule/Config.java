@@ -23,7 +23,7 @@ import java.util.regex.Pattern;
 public interface Config {
 
   public final int CONFERENCE_YEAR = 2016;
-  public final boolean STAGING = true;
+  public final boolean STAGING = false;
 
   @SuppressWarnings("deprecation")
   public static final long[][] CONFERENCE_DAYS =
@@ -55,7 +55,8 @@ public interface Config {
   public final boolean DEBUG_FIX_DATA = false;
   public final boolean SHOW_UNPUBLISHED_DATA=false;
 
-  public final long TIME_TRAVEL_SHIFT = 0; //Used for dogfooding: -29 * (24*60*60*1000L);
+  //Used for dogfooding: -29 * (24*60*60*1000L);
+  public final long TIME_TRAVEL_SHIFT = -29 * (24*60*60*1000L);
   public final String VIDEO_CATEGORY = "f04c9884-9dd8-e411-b87f-00155d5066d7";
 
   public final String CLOUD_STORAGE_BUCKET = "io2016-bucket-dev";

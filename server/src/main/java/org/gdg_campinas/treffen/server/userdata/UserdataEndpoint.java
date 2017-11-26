@@ -126,7 +126,6 @@ public class UserdataEndpoint {
      * @param userData UserData object with new values to save
      * @return Updated UserData object
      */
-    @SuppressWarnings("ResourceParameter")  // http://b.android.com/201031
     @ApiMethod(name = "updateUser", path = "all", httpMethod = ApiMethod.HttpMethod.PUT)
     public UserData updateUser(User user,  UserData userData) throws UnauthorizedException {
         UserData savedData = getUser(user);

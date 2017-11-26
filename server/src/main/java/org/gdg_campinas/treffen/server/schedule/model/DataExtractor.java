@@ -15,20 +15,18 @@
  */
 package org.gdg_campinas.treffen.server.schedule.model;
 
-import static org.gdg_campinas.treffen.server.schedule.model.DataModelHelper.get;
-import static org.gdg_campinas.treffen.server.schedule.model.DataModelHelper.set;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+
+import org.gdg_campinas.treffen.server.schedule.Config;
+import org.gdg_campinas.treffen.server.schedule.model.validator.Converters;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
-import org.gdg_campinas.treffen.server.schedule.Config;
-import org.gdg_campinas.treffen.server.schedule.model.validator.Converters;
-
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
 
 /**
  * Encapsulation of the rules that maps Vendor data sources to the IOSched data sources.
@@ -562,50 +560,6 @@ public class DataExtractor {
       DataModelHelper.set(thumbnail, dest, OutputJsonKeys.VideoLibrary.thumbnailUrl);
     }
     return vid;
-  }
-
-  @Deprecated
-  private void setRelatedVideos(JsonObject origin, JsonObject dest) {
-    JsonArray related = DataModelHelper.getAsArray(origin, InputJsonKeys.VendorAPISource.Topics.Related);
-    if (related == null) {
-      return;
-    }
-    for (JsonElement el: related) {
-      if (!el.isJsonObject()) {
-        continue;
-      }
-      JsonObject obj = el.getAsJsonObject();
-      if (!obj.has("name") || !obj.has("values")) {
-        continue;
-      }
-
-      if (InputJsonKeys.VendorAPISource.Topics.RELATED_NAME_VIDEO.equals(
-          obj.getAsJsonPrimitive("name").getAsString())) {
-
-        JsonElement values = obj.get("values");
-        if (!values.isJsonArray()) {
-          continue;
-        }
-
-        // As per the data specification, related content is formatted as
-        // "video1 title1\nvideo2 title2\n..."
-        StringBuilder relatedContentStr = new StringBuilder();
-        for (JsonElement value: values.getAsJsonArray()) {
-          String relatedSessionId = value.getAsString();
-          JsonObject relatedVideo = videoSessionsById.get(relatedSessionId);
-          if (relatedVideo != null) {
-            JsonElement vid = DataModelHelper.get(relatedVideo, OutputJsonKeys.VideoLibrary.vid);
-            JsonElement title = DataModelHelper.get(relatedVideo, OutputJsonKeys.VideoLibrary.title);
-            if (vid != null && title != null) {
-              relatedContentStr.append(vid.getAsString()).append(" ")
-                .append(title.getAsString()).append("\n");
-            }
-          }
-        }
-        DataModelHelper.set(new JsonPrimitive(relatedContentStr.toString()),
-            dest, OutputJsonKeys.Sessions.relatedContent);
-      }
-    }
   }
 
   private void setRelatedContent(JsonObject origin, JsonObject dest) {

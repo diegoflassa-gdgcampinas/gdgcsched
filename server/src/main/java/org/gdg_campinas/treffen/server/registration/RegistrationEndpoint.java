@@ -173,7 +173,7 @@ public class RegistrationEndpoint {
         FetchOptions fetchOptions =
                 FetchOptions.Builder.doNotFollowRedirects().validateCertificate().disallowTruncate();
 
-        ImmutableList.Builder delegateInfo = ImmutableList.<JSONObject>builder();
+        ImmutableList.Builder<JSONObject> delegateInfo = ImmutableList.<JSONObject>builder();
         for (String eventId : eventIds) {
             String urlStr = String.format("%s/%s/delegates/%s/",
                     eventManagerUrl, eventId.trim(), firebaseWrapper.getUserEmail());
