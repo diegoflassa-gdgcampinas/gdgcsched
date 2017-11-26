@@ -22,9 +22,6 @@ repositories {
         dirs '../third_party/AndroidSlidingUpPanel/libs/'
     }
     flatDir {
-        dirs '../third_party/svg-android/libs/'
-    }
-    flatDir {
         dirs '../third_party/sticky-headers/libs/'
     }
     flatDir {
@@ -33,7 +30,10 @@ repositories {
 }
 
 android {
-    compileSdkVersion rootProject.compileSdkVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    publishNonDefault true
 
     defaultConfig {
         versionCode = Integer.valueOf("" + appVersionCode).intValue()
@@ -127,7 +127,6 @@ android {
         // Gradle.
     }
 
-    flavorDimensions "fdDefault"
     productFlavors {
         // Use this flavor to run automated tests.
         targetSdk22 {
@@ -209,132 +208,132 @@ android {
 
 // TODO Remove once https://b.android.com/162285 is resolved.
 configurations {
-    normalDebugImplementation
-    normalQualityassuranceImplementation
-    normalReleaseImplementation
+    normalDebugCompile
+    normalQualityassuranceCompile
+    normalReleaseCompile
 
-    targetSdk22DebugImplementation
-    targetSdk22QualityassuranceImplementation
-    targetSdk22ReleaseImplementation
+    targetSdk22DebugCompile
+    targetSdk22QualityassuranceCompile
+    targetSdk22ReleaseCompile
 
-    mapEditorDebugImplementation
-    mapEditorQualityassuranceImplementation
-    mapEditorReleaseImplementation
+    mapEditorDebugCompile
+    mapEditorQualityassuranceCompile
+    mapEditorReleaseCompile
 }
 
 dependencies {
     // Backend server
-    implementation project(path: ':server', configuration: 'android-endpoints')
+    compile project(path: ':server', configuration: 'android-endpoints')
 
-    implementation ('com.google.api-client:google-api-client:1.23.0') {
+    compile ('com.google.api-client:google-api-client:1.23.0') {
         // Dependency org.apache.httpcomponents:httpclient:4.0.1
         // conflicts with the internal version provided by Android.
         exclude group: 'org.apache.httpcomponents', module:'httpclient'
     }
 
-    implementation ('com.google.api-client:google-api-client-android:1.23.0') {
+    compile ('com.google.api-client:google-api-client-android:1.23.0') {
         // Dependency org.apache.httpcomponents:httpclient:4.0.1
         // conflicts with the internal version provided by Android.
         exclude group: 'org.apache.httpcomponents', module:'httpclient'
     }
 
     // Google Play services split client libs.
-    implementation "com.google.android.gms:play-services-analytics:${google_play_services_client_library_version}"
-    implementation "com.google.android.gms:play-services-auth:${google_play_services_client_library_version}"
-    implementation "com.google.android.gms:play-services-maps:${google_play_services_client_library_version}"
-    implementation "com.google.android.gms:play-services-plus:${google_play_services_client_library_version}"
+    compile "com.google.android.gms:play-services-analytics:${google_play_services_client_library_version}"
+    compile "com.google.android.gms:play-services-auth:${google_play_services_client_library_version}"
+    compile "com.google.android.gms:play-services-maps:${google_play_services_client_library_version}"
+    compile "com.google.android.gms:play-services-plus:${google_play_services_client_library_version}"
 
     // Android support libraries.
-    implementation "com.android.support:appcompat-v7:${android_support_lib_version}"
-    implementation "com.android.support:cardview-v7:${android_support_lib_version}"
-    implementation "com.android.support:support-v13:${android_support_lib_version}"
-    implementation "com.android.support:recyclerview-v7:${android_support_lib_version}"
-    implementation "com.android.support:preference-v7:${android_support_lib_version}"
-    implementation "com.android.support:transition:${android_support_lib_version}"
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile "com.android.support:appcompat-v7:${android_support_lib_version}"
+    compile "com.android.support:cardview-v7:${android_support_lib_version}"
+    compile "com.android.support:support-v13:${android_support_lib_version}"
+    compile "com.android.support:recyclerview-v7:${android_support_lib_version}"
+    compile "com.android.support:preference-v7:${android_support_lib_version}"
+    compile "com.android.support:transition:${android_support_lib_version}"
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     // Use a local build of the design lib to pick up some fixes.
     // See third_party/material-components-android
-    implementation(name: 'design-release-32b1f74', ext: 'aar')
+    compile(name: 'design-release-32b1f74', ext: 'aar')
 
     // JSON utility library.
-    implementation 'com.google.code.gson:gson:2.8.2'
+    compile 'com.google.code.gson:gson:2.8.2'
 
     // YouTube client library
-    implementation files('../third_party/youtube/libs/YouTubeAndroidPlayerApi.jar')
+    compile files('../third_party/youtube/libs/YouTubeAndroidPlayerApi.jar')
 
     // Glide library, used to handle asynchronous loading and caching of images.
 	// TODO: Migration to 4.3.1 will need some code adaptation
 	//See https://github.com/bumptech/glide
-    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
 
-    implementation files('../third_party/disklrucache/libs/disklrucache-2.0.2.jar')
-	implementation 'com.turbomanage.basic-http-client:http-client-android:0.89'
-
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    compile 'com.turbomanage.basic-http-client:http-client-android:0.89'
     // SVG processor for the Conference Map overlay.
-    implementation(name: 'svg-android-2.0.7-20150515.214425-1', ext: 'jar')
+    compile 'com.github.japgolly.android:svg-android:2.0.6'
+    compile 'com.turbomanage.basic-http-client:http-client-android:0.89'
 
-    implementation(name: 'StickyHeaders-release', ext: 'aar')
+    compile(name: 'StickyHeaders-release', ext: 'aar')
 
     // Google Maps Android API utility library
 	// TODO: Migration to 0.5+ will need some code adaptation
-    implementation('com.google.maps.android:android-maps-utils:0.4+') {
+    compile('com.google.maps.android:android-maps-utils:0.4+') {
         exclude group: "com.google.android.gms"
     }
 
 	// TODO: Migration to 3.1.0 will need some code adaptation
-    implementation 'com.google.android:flexbox:0.2.7'
+    compile 'com.google.android:flexbox:0.2.7'
 
     // Added to resolve conflicts between the app build and the test build. The app build resolves
     // the jsr305 dependency to version 1.3.9, but in the test build the espresso-core dependency
-    // resolves jsr305 to 2.0.1. Declaring a implementation dependency on jsr305 2.0.1 will ensure 2.0.1 or
+    // resolves jsr305 to 2.0.1. Declaring a compile dependency on jsr305 2.0.1 will ensure 2.0.1 or
     // greater is used for both app and test builds.
-    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+    compile 'com.google.code.findbugs:jsr305:3.0.2'
 
-    implementation ('uk.co.chrisjenx:calligraphy:2.3.0') {
+    compile ('uk.co.chrisjenx:calligraphy:2.3.0') {
         exclude group: 'com.android.support:design'
     }
 	// TODO: Migration to 2.3.0 will need some code adaptation
-    implementation 'com.airbnb.android:lottie:2.2.0'
+    compile 'com.airbnb.android:lottie:2.2.0'
 
     // Firebase libraries
-    implementation "com.google.firebase:firebase-core:${google_play_services_client_library_version}"
-    implementation "com.google.firebase:firebase-messaging:${google_play_services_client_library_version}"
-    implementation "com.google.firebase:firebase-appindexing:${google_play_services_client_library_version}"
-    implementation "com.google.firebase:firebase-database:${google_play_services_client_library_version}"
-    implementation "com.google.firebase:firebase-config:${google_play_services_client_library_version}"
-    implementation "com.google.firebase:firebase-auth:${google_play_services_client_library_version}"
-    implementation "com.google.firebase:firebase-config:${google_play_services_client_library_version}"
-    implementation "com.google.firebase:firebase-crash:${google_play_services_client_library_version}"
+    compile "com.google.firebase:firebase-core:${google_play_services_client_library_version}"
+    compile "com.google.firebase:firebase-messaging:${google_play_services_client_library_version}"
+    compile "com.google.firebase:firebase-appindexing:${google_play_services_client_library_version}"
+    compile "com.google.firebase:firebase-database:${google_play_services_client_library_version}"
+    compile "com.google.firebase:firebase-config:${google_play_services_client_library_version}"
+    compile "com.google.firebase:firebase-auth:${google_play_services_client_library_version}"
+    compile "com.google.firebase:firebase-config:${google_play_services_client_library_version}"
+    compile "com.google.firebase:firebase-crash:${google_play_services_client_library_version}"
 
-    implementation "org.apache.commons:commons-lang3:3.7"
+    compile "org.apache.commons:commons-lang3:3.7"
 
-    normalDebugImplementation "com.squareup.leakcanary:leakcanary-android:${leak_canary_version}"
-    normalQualityassuranceImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
-    normalReleaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
+    normalDebugCompile "com.squareup.leakcanary:leakcanary-android:${leak_canary_version}"
+    normalQualityassuranceCompile "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
+    normalReleaseCompile "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
 
-    mapEditorDebugImplementation "com.squareup.leakcanary:leakcanary-android:${leak_canary_version}"
-    mapEditorQualityassuranceImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
-    mapEditorReleaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
+    mapEditorDebugCompile "com.squareup.leakcanary:leakcanary-android:${leak_canary_version}"
+    mapEditorQualityassuranceCompile "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
+    mapEditorReleaseCompile "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
 
-    targetSdk22DebugImplementation "com.squareup.leakcanary:leakcanary-android:${leak_canary_version}"
-    targetSdk22QualityassuranceImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
-    targetSdk22ReleaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
+    targetSdk22DebugCompile "com.squareup.leakcanary:leakcanary-android:${leak_canary_version}"
+    targetSdk22QualityassuranceCompile "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
+    targetSdk22ReleaseCompile "com.squareup.leakcanary:leakcanary-android-no-op:${leak_canary_version}"
 
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-intents:3.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-contrib:3.0.1'
+    androidTestCompile 'com.android.support.test:runner:1.0.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-intents:3.0.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-contrib:3.0.1'
     // Resolve conflicts between main and test APK:
-    androidTestImplementation "com.android.support:support-annotations:${android_support_lib_version}"
-    androidTestImplementation "com.android.support:recyclerview-v7:${android_support_lib_version}"
-    androidTestImplementation "com.android.support:design:${android_support_lib_version}"
+    androidTestCompile "com.android.support:support-annotations:${android_support_lib_version}"
+    androidTestCompile "com.android.support:recyclerview-v7:${android_support_lib_version}"
+    androidTestCompile "com.android.support:design:${android_support_lib_version}"
 
-    testImplementation 'junit:junit:4.12'
-    testImplementation 'org.hamcrest:hamcrest-core:1.3'
-    testImplementation 'org.mockito:mockito-core:1.12.0'
-    testImplementation 'org.powermock:powermock-api-mockito:1.7.3'
-    testImplementation 'org.powermock:powermock-module-junit4-rule-agent:1.7.3'
-    testImplementation 'org.powermock:powermock-module-junit4-rule:1.7.3'
-    testImplementation 'org.powermock:powermock-module-junit4:1.7.3'
-    testImplementation 'org.json:json:20171018'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.hamcrest:hamcrest-core:1.3'
+    testCompile 'org.mockito:mockito-core:1.12.0'
+    testCompile 'org.powermock:powermock-api-mockito:1.7.3'
+    testCompile 'org.powermock:powermock-module-junit4-rule-agent:1.7.3'
+    testCompile 'org.powermock:powermock-module-junit4-rule:1.7.3'
+    testCompile 'org.powermock:powermock-module-junit4:1.7.3'
+    testCompile 'org.json:json:20171018'
 }
