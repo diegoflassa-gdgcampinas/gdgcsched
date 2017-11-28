@@ -19,22 +19,17 @@ apply plugin: 'jacoco'
 repositories {
     mavenCentral()
     flatDir {
-        dirs '../third_party/AndroidSlidingUpPanel/libs/'
+        dirs './../third_party/StickyHeaders/libs/'
     }
     flatDir {
-        dirs '../third_party/svg-android/libs/'
-    }
-    flatDir {
-        dirs '../third_party/sticky-headers/libs/'
-    }
-    flatDir {
-        dirs '../third_party/material-components-android/libs/'
+        dirs './../third_party/YouTubeAndroidPlayerApi-1.2.2/libs/'
     }
 }
 
+sourceCompatibility =  JavaVersion.VERSION_1_7
+
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion rootProject.compileSdkVersion
 
     defaultConfig {
         proguardFiles getDefaultProguardFile('proguard-android.txt'), file('proguard-project.txt')
@@ -58,6 +53,7 @@ android {
         // Gradle.
     }
 
+    flavorDimensions "fdDefault"
     productFlavors {
         // Use this flavor to run automated tests.
         targetSdk22 {
@@ -117,32 +113,6 @@ android {
     }
 }
 
-// TODO Remove once https://b.android.com/162285 is resolved.
-configurations {
-    normalDebugCompile
-    normalQualityassuranceCompile
-    normalReleaseCompile
-
-    targetSdk22DebugCompile
-    targetSdk22QualityassuranceCompile
-    targetSdk22ReleaseCompile
-
-    mapEditorDebugCompile
-    mapEditorQualityassuranceCompile
-    mapEditorReleaseCompile
-}
-
 dependencies {
-    normalDebugCompile project(path: ':lib', configuration: 'normalDebug')
-    normalQualityassuranceCompile project(path: ':lib',
-            configuration: 'normalQualityassurance')
-    normalReleaseCompile project(path: ':lib', configuration: 'normalRelease')
-    mapEditorDebugCompile project(path: ':lib', configuration: 'mapEditorDebug')
-    mapEditorQualityassuranceCompile project(path: ':lib',
-            configuration: 'mapEditorQualityassurance')
-    mapEditorReleaseCompile project(path: ':lib', configuration: 'mapEditorRelease')
-    targetSdk22DebugCompile project(path: ':lib', configuration: 'targetSdk22Debug')
-    targetSdk22QualityassuranceCompile project(path: ':lib',
-            configuration: 'targetSdk22Qualityassurance')
-    targetSdk22ReleaseCompile project(path: ':lib', configuration: 'targetSdk22Release')
+    api project(path: ':lib')
 }
