@@ -47,6 +47,5 @@ See the /doc/MAP.md readme file for further details. -->
     </application>
 
     <uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        tools:remove="maxSdkVersion"/>
+        android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 </manifest>

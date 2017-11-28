@@ -30,9 +30,9 @@ import com.google.maps.android.geojson.GeoJsonFeature;
 import com.google.maps.android.geojson.GeoJsonLayer;
 import com.google.maps.android.geojson.GeoJsonPointStyle;
 import com.google.maps.android.ui.IconGenerator;
-import org.gdg_campinas.treffen.map.util.MarkerModel;
 import com.jakewharton.disklrucache.DiskLruCache;
 
+import org.gdg_campinas.treffen.map.util.MarkerModel;
 import org.json.JSONObject;
 
 import java.io.File;
@@ -43,9 +43,6 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Locale;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
 
 public class MapUtils {
 

@@ -28,9 +28,6 @@ import android.view.View;
 
 import org.gdg_campinas.treffen.lib.BuildConfig;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGI;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 /**
  * Set of runtime permission utility methods.
  */

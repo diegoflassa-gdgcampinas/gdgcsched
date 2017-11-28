@@ -38,7 +38,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.gms.auth.GoogleAuthUtil;
+
 import org.gdg_campinas.treffen.feed.FeedState;
+import org.gdg_campinas.treffen.lib.BuildConfig;
 import org.gdg_campinas.treffen.navigation.AppNavigationView;
 import org.gdg_campinas.treffen.navigation.AppNavigationViewAsBottomNavImpl;
 import org.gdg_campinas.treffen.navigation.NavigationModel;
@@ -50,17 +52,12 @@ import org.gdg_campinas.treffen.ui.widget.BadgedBottomNavigationView;
 import org.gdg_campinas.treffen.ui.widget.MultiSwipeRefreshLayout;
 import org.gdg_campinas.treffen.util.AccountUtils;
 import org.gdg_campinas.treffen.util.AnalyticsHelper;
+import org.gdg_campinas.treffen.util.ConnectivityUtils;
 import org.gdg_campinas.treffen.util.LogUtils;
 import org.gdg_campinas.treffen.util.RecentTasksStyler;
-import org.gdg_campinas.treffen.lib.BuildConfig;
-import org.gdg_campinas.treffen.util.ConnectivityUtils;
 import org.gdg_campinas.treffen.welcome.WelcomeActivity;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 /**
  * A base activity that handles common functionality in the app. This includes the navigation

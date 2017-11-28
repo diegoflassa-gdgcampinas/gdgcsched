@@ -16,7 +16,10 @@
 
 package org.gdg_campinas.treffen.sync.userdata;
 
-import android.content.*;
+import android.content.ContentProviderOperation;
+import android.content.ContentProviderResult;
+import android.content.ContentResolver;
+import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.util.Log;
@@ -31,10 +34,6 @@ import org.gdg_campinas.treffen.util.LogUtils;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 
 /**

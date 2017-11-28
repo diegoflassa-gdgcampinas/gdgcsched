@@ -23,12 +23,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.Exclude;
 import com.google.firebase.database.IgnoreExtraProperties;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
+
 import org.gdg_campinas.treffen.lib.R;
-
 import org.gdg_campinas.treffen.util.LogUtils;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 @Keep
 @IgnoreExtraProperties

@@ -25,16 +25,12 @@ import android.content.OperationApplicationException;
 import android.os.RemoteException;
 import android.support.annotation.Nullable;
 
-import org.gdg_campinas.treffen.sync.SyncHelper;
 import org.gdg_campinas.treffen.provider.ScheduleContract;
 import org.gdg_campinas.treffen.provider.ScheduleContractHelper;
+import org.gdg_campinas.treffen.sync.SyncHelper;
 import org.gdg_campinas.treffen.util.LogUtils;
 
 import java.util.ArrayList;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGV;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 /**
  * An {@code IntentService} with the sole purpose of upgrading any

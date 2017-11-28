@@ -18,6 +18,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
 import org.gdg_campinas.treffen.navigation.NavigationModel;
 import org.gdg_campinas.treffen.ui.BaseActivity;
 

@@ -25,6 +25,7 @@ import android.support.v4.app.NotificationCompat;
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
+
 import org.gdg_campinas.treffen.fcm.FcmCommand;
 import org.gdg_campinas.treffen.myio.MyIOActivity;
 import org.gdg_campinas.treffen.util.LogUtils;
@@ -32,12 +33,6 @@ import org.gdg_campinas.treffen.util.RegistrationUtils;
 import org.gdg_campinas.treffen.util.TimeUtils;
 
 import java.util.Date;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGI;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 public class NotificationCommand extends FcmCommand {
     private static final String TAG = LogUtils.makeLogTag("NotificationCommand");

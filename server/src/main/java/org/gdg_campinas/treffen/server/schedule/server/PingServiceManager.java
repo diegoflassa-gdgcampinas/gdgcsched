@@ -22,6 +22,7 @@ import com.google.api.client.http.HttpRequestInitializer;
 import com.google.api.client.http.HttpTransport;
 import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.samples.apps.iosched.rpc.ping.Ping;
+
 import java.io.IOException;
 import java.util.Arrays;
 

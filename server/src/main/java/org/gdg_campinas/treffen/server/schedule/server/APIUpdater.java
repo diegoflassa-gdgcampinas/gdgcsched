@@ -25,14 +25,15 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 import com.google.gson.stream.JsonWriter;
+
 import org.gdg_campinas.treffen.server.schedule.Config;
+import org.gdg_campinas.treffen.server.schedule.input.fetcher.EntityFetcher;
+import org.gdg_campinas.treffen.server.schedule.input.fetcher.RemoteFilesEntityFetcherFactory;
 import org.gdg_campinas.treffen.server.schedule.model.DataCheck;
 import org.gdg_campinas.treffen.server.schedule.model.DataExtractor;
 import org.gdg_campinas.treffen.server.schedule.model.JsonDataSources;
 import org.gdg_campinas.treffen.server.schedule.server.cloudstorage.CloudFileManager;
 import org.gdg_campinas.treffen.server.schedule.server.input.ExtraInput;
-import org.gdg_campinas.treffen.server.schedule.input.fetcher.EntityFetcher;
-import org.gdg_campinas.treffen.server.schedule.input.fetcher.RemoteFilesEntityFetcherFactory;
 import org.gdg_campinas.treffen.server.schedule.server.input.VendorStaticInput;
 import org.gdg_campinas.treffen.server.schedule.server.input.fetcher.CloudStorageRemoteFilesEntityFetcher;
 

@@ -109,11 +109,11 @@
 
     <security-constraint>
         <web-resource-collection>
-            <web-resource-name>admin</web-resource-name>
+            <web-resource-name>role-admin</web-resource-name>
             <url-pattern>/admin/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
-            <role-name>admin</role-name>
+            <role-name>role-admin</role-name>
         </auth-constraint>
     </security-constraint>
 
@@ -188,11 +188,11 @@
 
     <security-constraint>
         <web-resource-collection>
-          	<web-resource-name>cron</web-resource-name>
+          	<web-resource-name>role-cron</web-resource-name>
             <url-pattern>/cron/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
-        	<role-name>cron</role-name>
+        	<role-name>role-cron</role-name>
             <!-- <role-name>admin</role-name>  -->
         </auth-constraint>
     </security-constraint>

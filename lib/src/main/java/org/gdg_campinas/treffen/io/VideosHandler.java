@@ -16,11 +16,6 @@
 
 package org.gdg_campinas.treffen.io;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 import android.content.ContentProviderOperation;
 import android.content.Context;
 import android.database.Cursor;
@@ -31,6 +26,7 @@ import android.text.TextUtils;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+
 import org.gdg_campinas.treffen.Config;
 import org.gdg_campinas.treffen.io.model.Video;
 import org.gdg_campinas.treffen.provider.ScheduleContract;
@@ -40,6 +36,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Locale;
+
+import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
+import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
+import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
+import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 public class VideosHandler extends JSONHandler {
     private static final String TAG = makeLogTag(VideosHandler.class);

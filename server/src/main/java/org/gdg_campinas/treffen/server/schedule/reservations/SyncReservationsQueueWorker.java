@@ -15,17 +15,17 @@
  */
 package org.gdg_campinas.treffen.server.schedule.reservations;
 
-import static com.googlecode.objectify.ObjectifyService.ofy;
-
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
+import com.googlecode.objectify.NotFoundException;
+
+import org.gdg_campinas.treffen.server.FirebaseWrapper;
 import org.gdg_campinas.treffen.server.schedule.Config;
 import org.gdg_campinas.treffen.server.userdata.db.ReservedSession;
-import org.gdg_campinas.treffen.server.FirebaseWrapper;
 import org.gdg_campinas.treffen.server.userdata.db.UserData;
-import com.googlecode.objectify.NotFoundException;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -35,11 +35,14 @@ import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
+
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import static com.googlecode.objectify.ObjectifyService.ofy;
 
 /**
  * Worker that retrieves reservations from RTDB and updates them in datastore.

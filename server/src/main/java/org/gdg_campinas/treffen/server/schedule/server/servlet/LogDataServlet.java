@@ -21,6 +21,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
+
 import org.gdg_campinas.treffen.server.schedule.server.UpdateRunLogger;
 import org.gdg_campinas.treffen.server.schedule.server.cloudstorage.CloudFileManager;
 

@@ -16,21 +16,28 @@
 
 package org.gdg_campinas.treffen.map.util;
 
-import android.graphics.*;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Matrix;
+import android.graphics.Picture;
+import android.graphics.RectF;
 import android.util.Log;
 
 import com.google.android.gms.maps.model.Tile;
 import com.google.android.gms.maps.model.TileProvider;
-
-import java.io.*;
-import java.util.concurrent.ConcurrentLinkedQueue;
-
-import org.gdg_campinas.treffen.util.LogUtils;
-import org.gdg_campinas.treffen.lib.BuildConfig;
 import com.larvalabs.svgandroid.SVG;
 import com.larvalabs.svgandroid.SVGBuilder;
 
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
+import org.gdg_campinas.treffen.lib.BuildConfig;
+import org.gdg_campinas.treffen.util.LogUtils;
+
+import java.io.BufferedOutputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class SVGTileProvider implements TileProvider {
     private static final String TAG = LogUtils.makeLogTag(SVGTileProvider.class);

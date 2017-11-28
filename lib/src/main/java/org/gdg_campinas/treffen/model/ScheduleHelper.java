@@ -24,15 +24,13 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
+import org.gdg_campinas.treffen.lib.BuildConfig;
 import org.gdg_campinas.treffen.provider.ScheduleContract;
 import org.gdg_campinas.treffen.schedule.ScheduleModel;
 import org.gdg_campinas.treffen.schedule.TagFilterHolder;
 import org.gdg_campinas.treffen.util.LogUtils;
-import org.gdg_campinas.treffen.lib.BuildConfig;
 
 import java.util.ArrayList;
-
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 public class ScheduleHelper {
 

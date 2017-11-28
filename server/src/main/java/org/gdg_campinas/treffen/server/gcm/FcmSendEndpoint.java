@@ -22,11 +22,14 @@ import com.google.api.server.spi.config.ApiNamespace;
 import com.google.api.server.spi.config.Named;
 import com.google.api.server.spi.response.NotFoundException;
 import com.google.api.server.spi.response.UnauthorizedException;
-import org.gdg_campinas.treffen.server.gcm.db.models.Device;
+
 import org.gdg_campinas.treffen.server.gcm.db.DeviceStore;
+import org.gdg_campinas.treffen.server.gcm.db.models.Device;
 import org.gdg_campinas.treffen.server.gcm.device.MessageSender;
 import org.gdg_campinas.treffen.server.userdata.Ids;
+
 import java.util.List;
+
 import javax.servlet.ServletContext;
 
 /**

@@ -16,9 +16,9 @@
 
 package org.gdg_campinas.treffen.map.util;
 
-import org.gdg_campinas.treffen.provider.ScheduleContract;
-
 import android.content.Context;
+
+import org.gdg_campinas.treffen.provider.ScheduleContract;
 
 /**
  * Loads session information for all sessions scheduled in a particular room after a timestamp.

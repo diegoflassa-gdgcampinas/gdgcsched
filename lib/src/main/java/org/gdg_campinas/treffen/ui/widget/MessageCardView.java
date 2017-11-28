@@ -27,11 +27,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.gdg_campinas.treffen.util.LogUtils;
 import org.gdg_campinas.treffen.lib.R;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
+import org.gdg_campinas.treffen.util.LogUtils;
 
 public class MessageCardView extends CardView implements View.OnClickListener {
     private static final String TAG = LogUtils.makeLogTag(MessageCardView.class);

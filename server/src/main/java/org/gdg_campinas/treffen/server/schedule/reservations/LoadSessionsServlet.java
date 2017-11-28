@@ -15,8 +15,6 @@
  */
 package org.gdg_campinas.treffen.server.schedule.reservations;
 
-import static com.google.firebase.database.Transaction.success;
-
 import com.google.appengine.api.users.UserService;
 import com.google.appengine.api.users.UserServiceFactory;
 import com.google.firebase.FirebaseApp;
@@ -36,10 +34,13 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+
+import org.apache.commons.io.IOUtils;
 import org.gdg_campinas.treffen.server.schedule.Config;
 import org.gdg_campinas.treffen.server.schedule.reservations.model.Reservation;
 import org.gdg_campinas.treffen.server.schedule.reservations.model.Seats;
 import org.gdg_campinas.treffen.server.schedule.reservations.model.Session;
+
 import java.io.IOException;
 import java.net.URL;
 import java.text.ParseException;
@@ -53,11 +54,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.logging.Logger;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.apache.commons.io.IOUtils;
+
+import static com.google.firebase.database.Transaction.success;
 
 /**
  * LoadSessionsServlet loads sessions into the reservation system.

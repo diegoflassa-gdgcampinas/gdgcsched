@@ -20,6 +20,7 @@ import android.app.IntentService;
 import android.content.Intent;
 
 import com.google.firebase.iid.FirebaseInstanceId;
+
 import org.gdg_campinas.treffen.fcm.ServerUtilities;
 
 /**

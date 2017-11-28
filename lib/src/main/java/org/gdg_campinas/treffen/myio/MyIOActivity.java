@@ -49,9 +49,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import org.gdg_campinas.treffen.util.AccountUtils;
-import org.gdg_campinas.treffen.util.SyncUtils;
-import org.gdg_campinas.treffen.util.WelcomeUtils;
+
 import org.gdg_campinas.treffen.lib.BuildConfig;
 import org.gdg_campinas.treffen.lib.R;
 import org.gdg_campinas.treffen.navigation.NavigationModel;
@@ -60,17 +58,14 @@ import org.gdg_campinas.treffen.signin.RegistrationStatusService;
 import org.gdg_campinas.treffen.signin.SignInListener;
 import org.gdg_campinas.treffen.signin.SignInManager;
 import org.gdg_campinas.treffen.ui.BaseActivity;
-import org.gdg_campinas.treffen.util.RegistrationUtils;
-import org.gdg_campinas.treffen.util.TimeUtils;
-
+import org.gdg_campinas.treffen.util.AccountUtils;
 import org.gdg_campinas.treffen.util.LogUtils;
+import org.gdg_campinas.treffen.util.RegistrationUtils;
+import org.gdg_campinas.treffen.util.SyncUtils;
+import org.gdg_campinas.treffen.util.TimeUtils;
+import org.gdg_campinas.treffen.util.WelcomeUtils;
 
 import java.util.Date;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGI;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 /**
  * Activity that shows a user's schedule and allows the user to sign in and sign out.

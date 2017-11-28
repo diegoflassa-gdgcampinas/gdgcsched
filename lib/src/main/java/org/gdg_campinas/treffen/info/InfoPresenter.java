@@ -19,6 +19,7 @@ import android.support.annotation.NonNull;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
+
 import org.gdg_campinas.treffen.info.about.AboutInfo;
 import org.gdg_campinas.treffen.info.event.EventInfo;
 import org.gdg_campinas.treffen.info.travel.TravelInfo;

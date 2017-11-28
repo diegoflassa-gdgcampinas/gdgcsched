@@ -21,6 +21,7 @@ import com.google.api.server.spi.config.ApiNamespace;
 import com.google.api.server.spi.config.Named;
 import com.google.appengine.tools.cloudstorage.GcsFilename;
 import com.google.common.base.Optional;
+
 import org.gdg_campinas.treffen.server.schedule.Config;
 import org.gdg_campinas.treffen.server.schedule.server.image.ServingUrlManager;
 import org.gdg_campinas.treffen.server.userdata.Ids;

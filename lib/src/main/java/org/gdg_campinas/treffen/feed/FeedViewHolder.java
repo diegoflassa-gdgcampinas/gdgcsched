@@ -37,6 +37,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+
 import org.gdg_campinas.treffen.feed.data.FeedMessage;
 import org.gdg_campinas.treffen.lib.R;
 import org.gdg_campinas.treffen.ui.widget.HtmlTextView;

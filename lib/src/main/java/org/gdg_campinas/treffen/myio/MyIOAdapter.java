@@ -28,9 +28,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.gdg_campinas.treffen.schedule.TagPool;
-import org.gdg_campinas.treffen.util.AccountUtils;
-import org.gdg_campinas.treffen.util.WelcomeUtils;
 import org.gdg_campinas.treffen.Config;
 import org.gdg_campinas.treffen.lib.R;
 import org.gdg_campinas.treffen.messages.MessageCardHelper;
@@ -39,7 +36,10 @@ import org.gdg_campinas.treffen.model.ScheduleItem;
 import org.gdg_campinas.treffen.model.TagMetadata;
 import org.gdg_campinas.treffen.schedule.NonSessionItemViewHolder;
 import org.gdg_campinas.treffen.schedule.SessionItemViewHolder;
+import org.gdg_campinas.treffen.schedule.TagPool;
+import org.gdg_campinas.treffen.util.AccountUtils;
 import org.gdg_campinas.treffen.util.UIUtils;
+import org.gdg_campinas.treffen.util.WelcomeUtils;
 
 import java.util.ArrayList;
 import java.util.List;

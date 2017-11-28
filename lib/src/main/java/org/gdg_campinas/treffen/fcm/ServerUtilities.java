@@ -23,11 +23,12 @@ import android.text.TextUtils;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
 import com.google.api.client.http.javanet.NetHttpTransport;
-import org.gdg_campinas.treffen.util.AccountUtils;
-import org.gdg_campinas.treffen.util.LogUtils;
-import org.gdg_campinas.treffen.lib.BuildConfig;
 import com.google.samples.apps.iosched.rpc.fcm.Fcm;
 import com.google.samples.apps.iosched.rpc.ping.Ping;
+
+import org.gdg_campinas.treffen.lib.BuildConfig;
+import org.gdg_campinas.treffen.util.AccountUtils;
+import org.gdg_campinas.treffen.util.LogUtils;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -41,13 +42,6 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Random;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGI;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGV;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 /**
  * Helper class used to communicate with the demo server.

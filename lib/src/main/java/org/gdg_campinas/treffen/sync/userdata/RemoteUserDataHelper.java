@@ -22,11 +22,12 @@ import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
 import com.google.api.client.http.javanet.NetHttpTransport;
 import com.google.api.client.util.ArrayMap;
-import org.gdg_campinas.treffen.util.AccountUtils;
-import org.gdg_campinas.treffen.provider.ScheduleContract;
 import com.google.samples.apps.iosched.rpc.userdata.Userdata;
 import com.google.samples.apps.iosched.rpc.userdata.model.JsonMap;
 import com.google.samples.apps.iosched.rpc.userdata.model.UserData;
+
+import org.gdg_campinas.treffen.provider.ScheduleContract;
+import org.gdg_campinas.treffen.util.AccountUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -16,19 +16,15 @@
 
 package org.gdg_campinas.treffen;
 
-import org.gdg_campinas.treffen.util.ParserUtils;
 import org.gdg_campinas.treffen.lib.BuildConfig;
 import org.gdg_campinas.treffen.lib.R;
-
 import org.gdg_campinas.treffen.util.LogUtils;
+import org.gdg_campinas.treffen.util.ParserUtils;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 public class Config {
 

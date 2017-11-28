@@ -41,11 +41,6 @@ import org.gdg_campinas.treffen.util.LogUtils;
 
 import java.util.ArrayList;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 /**
  * Background {@link android.app.Service} that adds or removes session Calendar events through the
  * {@link CalendarContract} API available in Android 4.0 or above.

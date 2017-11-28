@@ -16,23 +16,29 @@
 
 package org.gdg_campinas.treffen.server.gcm.device;
 
+import com.google.android.gcm.server.Constants;
+import com.google.android.gcm.server.Message;
+import com.google.android.gcm.server.MulticastResult;
+import com.google.android.gcm.server.Result;
+import com.google.android.gcm.server.Sender;
+import com.google.appengine.api.taskqueue.Queue;
+import com.google.appengine.api.taskqueue.QueueFactory;
+import com.google.appengine.api.taskqueue.TaskOptions;
+
 import org.gdg_campinas.treffen.server.gcm.db.ApiKeyInitializer;
 import org.gdg_campinas.treffen.server.gcm.db.DeviceStore;
 import org.gdg_campinas.treffen.server.gcm.db.MessageStore;
 import org.gdg_campinas.treffen.server.gcm.db.models.Device;
 import org.gdg_campinas.treffen.server.gcm.db.models.MulticastMessage;
-import com.google.android.gcm.server.*;
-import com.google.appengine.api.taskqueue.Queue;
-import com.google.appengine.api.taskqueue.QueueFactory;
-import com.google.appengine.api.taskqueue.TaskOptions;
 
-import javax.servlet.ServletConfig;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 
 /** Utility class for sending individual messages to devices.

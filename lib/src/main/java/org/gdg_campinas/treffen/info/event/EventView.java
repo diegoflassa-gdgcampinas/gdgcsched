@@ -26,9 +26,9 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.gdg_campinas.treffen.util.AnalyticsHelper;
 import org.gdg_campinas.treffen.lib.R;
 import org.gdg_campinas.treffen.ui.widget.HtmlTextView;
+import org.gdg_campinas.treffen.util.AnalyticsHelper;
 
 public class EventView extends FrameLayout {
 

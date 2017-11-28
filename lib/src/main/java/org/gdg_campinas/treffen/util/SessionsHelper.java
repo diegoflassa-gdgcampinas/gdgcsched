@@ -28,16 +28,13 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
 
-import org.gdg_campinas.treffen.sync.SyncHelper;
 import org.gdg_campinas.treffen.appwidget.ScheduleWidgetProvider;
 import org.gdg_campinas.treffen.lib.R;
 import org.gdg_campinas.treffen.provider.ScheduleContract;
 import org.gdg_campinas.treffen.settings.SettingsUtils;
+import org.gdg_campinas.treffen.sync.SyncHelper;
 
 import java.util.Date;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 /**
  * Helper class for dealing with common actions to take on a session.

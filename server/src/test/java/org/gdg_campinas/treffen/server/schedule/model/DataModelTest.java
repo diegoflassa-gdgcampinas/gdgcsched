@@ -15,15 +15,15 @@
  */
 package org.gdg_campinas.treffen.server.schedule.model;
 
-import static org.junit.Assert.*;
-
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import org.gdg_campinas.treffen.test.TestHelper;
 
+import org.gdg_campinas.treffen.test.TestHelper;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class DataModelTest {
 

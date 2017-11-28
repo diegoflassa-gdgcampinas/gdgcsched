@@ -28,10 +28,6 @@ import org.gdg_campinas.treffen.settings.SettingsUtils;
 
 import java.util.List;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGI;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 public class WiFiUtils {
 
     // Preference key and values associated with WiFi AP configuration.

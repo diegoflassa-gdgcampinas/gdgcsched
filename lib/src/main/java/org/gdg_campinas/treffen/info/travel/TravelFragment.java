@@ -25,9 +25,6 @@ import org.gdg_campinas.treffen.info.BaseInfoFragment;
 import org.gdg_campinas.treffen.info.CollapsibleCard;
 import org.gdg_campinas.treffen.util.LogUtils;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 public class TravelFragment extends BaseInfoFragment<TravelInfo> {
     private static final String TAG = LogUtils.makeLogTag(TravelFragment.class);
 

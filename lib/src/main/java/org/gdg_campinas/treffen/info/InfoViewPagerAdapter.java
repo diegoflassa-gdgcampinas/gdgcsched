@@ -17,20 +17,16 @@ import android.content.Context;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import org.gdg_campinas.treffen.debug.DebugFragment;
 import org.gdg_campinas.treffen.info.about.AboutFragment;
 import org.gdg_campinas.treffen.info.about.AboutInfo;
 import org.gdg_campinas.treffen.info.event.EventFragment;
 import org.gdg_campinas.treffen.info.event.EventInfo;
 import org.gdg_campinas.treffen.info.settings.SettingsFragment;
-import org.gdg_campinas.treffen.util.LogUtils;
-import org.gdg_campinas.treffen.debug.DebugFragment;
 import org.gdg_campinas.treffen.info.travel.TravelFragment;
 import org.gdg_campinas.treffen.info.travel.TravelInfo;
 import org.gdg_campinas.treffen.lib.BuildConfig;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
+import org.gdg_campinas.treffen.util.LogUtils;
 
 public class InfoViewPagerAdapter extends FragmentPagerAdapter {
 

@@ -22,7 +22,6 @@ import android.net.Uri;
 import android.support.v4.content.AsyncTaskLoader;
 
 import org.gdg_campinas.treffen.provider.ScheduleContract;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 

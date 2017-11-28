@@ -14,10 +14,6 @@
 
 package org.gdg_campinas.treffen.io;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGI;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 import android.content.ContentProviderOperation;
 import android.content.Context;
 import android.net.Uri;
@@ -25,6 +21,7 @@ import android.support.annotation.NonNull;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+
 import org.gdg_campinas.treffen.io.model.Card;
 import org.gdg_campinas.treffen.provider.ScheduleContract;
 import org.gdg_campinas.treffen.provider.ScheduleContractHelper;

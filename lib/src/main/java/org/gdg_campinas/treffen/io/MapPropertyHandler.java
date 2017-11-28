@@ -23,19 +23,17 @@ import android.support.annotation.NonNull;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+
 import org.gdg_campinas.treffen.io.map.model.MapData;
 import org.gdg_campinas.treffen.io.map.model.Tile;
 import org.gdg_campinas.treffen.provider.ScheduleContract;
 import org.gdg_campinas.treffen.provider.ScheduleContractHelper;
-
 import org.gdg_campinas.treffen.util.LogUtils;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 public class MapPropertyHandler extends JSONHandler {
     private static final String TAG = LogUtils.makeLogTag(MapPropertyHandler.class);

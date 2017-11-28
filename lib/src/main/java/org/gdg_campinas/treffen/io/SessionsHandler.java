@@ -16,11 +16,6 @@
 
 package org.gdg_campinas.treffen.io;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 import android.content.ContentProviderOperation;
 import android.content.Context;
 import android.database.Cursor;
@@ -33,7 +28,9 @@ import android.text.TextUtils;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+
 import org.gdg_campinas.treffen.Config;
+import org.gdg_campinas.treffen.io.model.Session;
 import org.gdg_campinas.treffen.io.model.Speaker;
 import org.gdg_campinas.treffen.io.model.Tag;
 import org.gdg_campinas.treffen.provider.ScheduleContract;
@@ -41,7 +38,6 @@ import org.gdg_campinas.treffen.provider.ScheduleContractHelper;
 import org.gdg_campinas.treffen.provider.ScheduleDatabase;
 import org.gdg_campinas.treffen.util.LogUtils;
 import org.gdg_campinas.treffen.util.TimeUtils;
-import org.gdg_campinas.treffen.io.model.Session;
 
 import java.util.ArrayList;
 import java.util.HashMap;

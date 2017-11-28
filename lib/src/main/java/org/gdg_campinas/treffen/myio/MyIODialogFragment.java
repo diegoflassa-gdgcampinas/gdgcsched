@@ -39,6 +39,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
+
 import org.gdg_campinas.treffen.util.AccountUtils;
 
 /**

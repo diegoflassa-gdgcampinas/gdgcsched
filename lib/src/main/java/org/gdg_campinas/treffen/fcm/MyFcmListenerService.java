@@ -15,20 +15,18 @@ package org.gdg_campinas.treffen.fcm;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
+
+import org.gdg_campinas.treffen.fcm.command.AnnouncementCommand;
 import org.gdg_campinas.treffen.fcm.command.FeedCommand;
+import org.gdg_campinas.treffen.fcm.command.NotificationCommand;
 import org.gdg_campinas.treffen.fcm.command.SyncCommand;
 import org.gdg_campinas.treffen.fcm.command.SyncUserCommand;
-import org.gdg_campinas.treffen.util.LogUtils;
-import org.gdg_campinas.treffen.fcm.command.AnnouncementCommand;
-import org.gdg_campinas.treffen.fcm.command.NotificationCommand;
 import org.gdg_campinas.treffen.fcm.command.TestCommand;
+import org.gdg_campinas.treffen.util.LogUtils;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
 
 /**
  * Receive downstream FCM messages, examine the payload and determine what action

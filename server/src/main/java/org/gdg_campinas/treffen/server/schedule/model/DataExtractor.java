@@ -15,18 +15,18 @@
  */
 package org.gdg_campinas.treffen.server.schedule.model;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-
-import org.gdg_campinas.treffen.server.schedule.Config;
-import org.gdg_campinas.treffen.server.schedule.model.validator.Converters;
-
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
+
+import org.gdg_campinas.treffen.server.schedule.Config;
+import org.gdg_campinas.treffen.server.schedule.model.validator.Converters;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
 
 /**
  * Encapsulation of the rules that maps Vendor data sources to the IOSched data sources.

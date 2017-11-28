@@ -19,15 +19,13 @@ import android.provider.Settings;
 import android.support.test.runner.AndroidJUnit4;
 import android.test.suitebuilder.annotation.LargeTest;
 
+import org.gdg_campinas.treffen.about.AboutActivity;
 import org.gdg_campinas.treffen.testutils.BaseActivityTestRule;
 import org.gdg_campinas.treffen.util.LogUtils;
-import org.gdg_campinas.treffen.about.AboutActivity;
-
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 import static org.junit.Assert.assertFalse;
 
 /**

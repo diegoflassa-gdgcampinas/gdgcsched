@@ -16,10 +16,11 @@
 
 package org.gdg_campinas.treffen.server;
 
+import com.googlecode.objectify.ObjectifyService;
+
 import org.gdg_campinas.treffen.server.gcm.db.models.Device;
 import org.gdg_campinas.treffen.server.gcm.db.models.MulticastMessage;
 import org.gdg_campinas.treffen.server.userdata.db.UserData;
-import com.googlecode.objectify.ObjectifyService;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;

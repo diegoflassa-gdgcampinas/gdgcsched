@@ -28,7 +28,16 @@ import android.text.TextUtils;
 import com.google.gson.Gson;
 import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
+import com.larvalabs.svgandroid.SVG;
+import com.larvalabs.svgandroid.SVGBuilder;
+import com.larvalabs.svgandroid.SVGParseException;
+import com.turbomanage.httpclient.BasicHttpClient;
+import com.turbomanage.httpclient.ConsoleRequestLogger;
+import com.turbomanage.httpclient.HttpResponse;
+import com.turbomanage.httpclient.RequestLogger;
+
 import org.gdg_campinas.treffen.io.BlocksHandler;
+import org.gdg_campinas.treffen.io.CardHandler;
 import org.gdg_campinas.treffen.io.HashtagsHandler;
 import org.gdg_campinas.treffen.io.JSONHandler;
 import org.gdg_campinas.treffen.io.MapPropertyHandler;
@@ -43,14 +52,6 @@ import org.gdg_campinas.treffen.provider.ScheduleContract;
 import org.gdg_campinas.treffen.util.IOUtils;
 import org.gdg_campinas.treffen.util.LogUtils;
 import org.gdg_campinas.treffen.util.MapUtils;
-import org.gdg_campinas.treffen.io.CardHandler;
-import com.larvalabs.svgandroid.SVG;
-import com.larvalabs.svgandroid.SVGBuilder;
-import com.larvalabs.svgandroid.SVGParseException;
-import com.turbomanage.httpclient.BasicHttpClient;
-import com.turbomanage.httpclient.ConsoleRequestLogger;
-import com.turbomanage.httpclient.HttpResponse;
-import com.turbomanage.httpclient.RequestLogger;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -61,12 +62,6 @@ import java.net.HttpURLConnection;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGI;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 /**
  * Helper class that parses conference data and imports them into the app's

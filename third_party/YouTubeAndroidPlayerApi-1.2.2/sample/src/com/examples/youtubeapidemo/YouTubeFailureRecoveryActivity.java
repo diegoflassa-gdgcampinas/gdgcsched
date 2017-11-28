@@ -16,12 +16,12 @@
 
 package com.examples.youtubeapidemo;
 
+import android.content.Intent;
+import android.widget.Toast;
+
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
-
-import android.content.Intent;
-import android.widget.Toast;
 
 /**
  * An abstract activity which deals with recovering from errors which may occur during API

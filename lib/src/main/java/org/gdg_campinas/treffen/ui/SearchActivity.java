@@ -49,8 +49,6 @@ import org.gdg_campinas.treffen.session.SessionDetailActivity;
 import org.gdg_campinas.treffen.util.AnalyticsHelper;
 import org.gdg_campinas.treffen.util.LogUtils;
 
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 public class SearchActivity extends BaseActivity implements
         LoaderManager.LoaderCallbacks<Cursor>, AdapterView.OnItemClickListener {
 

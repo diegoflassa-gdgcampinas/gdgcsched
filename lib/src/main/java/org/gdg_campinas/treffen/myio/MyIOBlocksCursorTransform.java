@@ -22,10 +22,9 @@ import android.support.annotation.NonNull;
 import android.support.v4.content.ContentResolverCompat;
 import android.support.v4.os.CancellationSignal;
 
-import org.gdg_campinas.treffen.util.CursorModelLoader;
 import org.gdg_campinas.treffen.model.ScheduleItem;
 import org.gdg_campinas.treffen.provider.ScheduleContract;
-
+import org.gdg_campinas.treffen.util.CursorModelLoader;
 
 import java.util.ArrayList;
 import java.util.List;

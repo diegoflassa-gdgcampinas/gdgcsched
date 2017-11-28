@@ -22,6 +22,7 @@ import android.support.annotation.NonNull;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+
 import org.gdg_campinas.treffen.util.IOUtils;
 
 import java.io.BufferedReader;

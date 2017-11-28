@@ -28,6 +28,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+
 import org.gdg_campinas.treffen.server.schedule.Config;
 import org.gdg_campinas.treffen.server.schedule.input.fetcher.RemoteJsonHelper;
 

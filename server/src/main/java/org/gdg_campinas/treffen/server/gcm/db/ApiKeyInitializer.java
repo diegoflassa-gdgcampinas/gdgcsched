@@ -16,17 +16,17 @@
 package org.gdg_campinas.treffen.server.gcm.db;
 
 
-import java.util.logging.Logger;
-
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
-
+import com.google.appengine.api.datastore.DatastoreService;
 import com.google.appengine.api.datastore.DatastoreServiceFactory;
 import com.google.appengine.api.datastore.Entity;
 import com.google.appengine.api.datastore.EntityNotFoundException;
 import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.datastore.KeyFactory;
-import com.google.appengine.api.datastore.DatastoreService;
+
+import java.util.logging.Logger;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
 
 /**
  * Context initializer that loads the API key from a
@@ -35,12 +35,12 @@ import com.google.appengine.api.datastore.DatastoreService;
  */
 public class ApiKeyInitializer implements ServletContextListener {
 
-    public static final String API_KEY = "<ENTER_YOUR_KEY>";
+    public static final String API_KEY = "AIzaSyCqN8VfgjZ15JEvhpoBmgkgiJWoZN6pYuI";
 
     public static final String ATTRIBUTE_ACCESS_KEY = "apiKey";
 
     private static final String ENTITY_KIND = "Settings";
-    private static final String ENTITY_KEY = "MyKey";
+    private static final String ENTITY_KEY = "AIzaSyCqN8VfgjZ15JEvhpoBmgkgiJWoZN6pYuI";
     private static final String ACCESS_KEY_FIELD = "ApiKey";
 
     private final Logger mLogger = Logger.getLogger(getClass().getName());

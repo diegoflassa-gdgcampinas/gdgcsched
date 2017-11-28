@@ -15,25 +15,18 @@
  */
 package org.gdg_campinas.treffen.server.schedule.model;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.any;
-import static org.powermock.api.mockito.PowerMockito.mock;
-import static org.powermock.api.mockito.PowerMockito.when;
-
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
-import org.gdg_campinas.treffen.server.schedule.server.image.ServingUrlManager;
-import org.gdg_campinas.treffen.server.schedule.server.input.ExtraInput;
+
 import org.gdg_campinas.treffen.server.schedule.input.fetcher.EntityFetcher;
 import org.gdg_campinas.treffen.server.schedule.input.fetcher.RemoteFilesEntityFetcherFactory;
 import org.gdg_campinas.treffen.server.schedule.input.fetcher.RemoteFilesEntityFetcherFactory.FetcherBuilder;
+import org.gdg_campinas.treffen.server.schedule.server.image.ServingUrlManager;
+import org.gdg_campinas.treffen.server.schedule.server.input.ExtraInput;
 import org.gdg_campinas.treffen.server.schedule.server.input.VendorDynamicInput;
 import org.gdg_campinas.treffen.test.TestHelper;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -46,6 +39,13 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.Map;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Matchers.any;
+import static org.powermock.api.mockito.PowerMockito.mock;
+import static org.powermock.api.mockito.PowerMockito.when;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({ServingUrlManager.class})

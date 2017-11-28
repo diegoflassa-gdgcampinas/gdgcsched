@@ -24,19 +24,15 @@ import com.google.android.gms.security.ProviderInstaller;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
-import org.gdg_campinas.treffen.util.AnalyticsHelper;
-import org.gdg_campinas.treffen.util.LogUtils;
-import org.gdg_campinas.treffen.lib.BuildConfig;
-import org.gdg_campinas.treffen.lib.R;
-import org.gdg_campinas.treffen.settings.SettingsUtils;
-import org.gdg_campinas.treffen.util.TimeUtils;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
+import org.gdg_campinas.treffen.lib.BuildConfig;
+import org.gdg_campinas.treffen.lib.R;
+import org.gdg_campinas.treffen.settings.SettingsUtils;
+import org.gdg_campinas.treffen.util.AnalyticsHelper;
+import org.gdg_campinas.treffen.util.LogUtils;
+import org.gdg_campinas.treffen.util.TimeUtils;
 
 /**
  * {@link android.app.Application} used to initialize Analytics. Code initialized in Application

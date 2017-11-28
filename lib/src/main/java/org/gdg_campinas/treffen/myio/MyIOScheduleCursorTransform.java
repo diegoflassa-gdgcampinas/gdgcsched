@@ -23,8 +23,8 @@ import android.support.v4.os.CancellationSignal;
 
 import org.gdg_campinas.treffen.model.ScheduleItem;
 import org.gdg_campinas.treffen.model.ScheduleItemHelper;
-import org.gdg_campinas.treffen.util.CursorModelLoader;
 import org.gdg_campinas.treffen.provider.ScheduleContract.Sessions;
+import org.gdg_campinas.treffen.util.CursorModelLoader;
 
 import java.util.List;
 

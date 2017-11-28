@@ -15,11 +15,11 @@
  */
 package org.gdg_campinas.treffen.debug.actions;
 
-import android.content.ContentResolver;
 import android.accounts.Account;
+import android.content.ContentResolver;
 import android.content.Context;
-import android.os.AsyncTask;
 import android.content.SyncResult;
+import android.os.AsyncTask;
 import android.os.Bundle;
 
 import org.gdg_campinas.treffen.debug.DebugAction;

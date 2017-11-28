@@ -78,9 +78,6 @@ import java.util.Formatter;
 import java.util.TimeZone;
 import java.util.regex.Pattern;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 /**
  * An assortment of UI helpers.
  */

@@ -15,8 +15,8 @@
  */
 package org.gdg_campinas.treffen.server.schedule.server.input;
 
-import org.gdg_campinas.treffen.server.schedule.model.InputJsonKeys;
 import org.gdg_campinas.treffen.server.schedule.input.fetcher.RemoteFilesEntityFetcherFactory;
+import org.gdg_campinas.treffen.server.schedule.model.InputJsonKeys;
 
 /**
  * Encapsulation for all the input extracted from CloudStorage static files.

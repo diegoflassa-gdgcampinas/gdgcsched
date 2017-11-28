@@ -49,25 +49,22 @@ import com.google.maps.android.geojson.GeoJsonFeature;
 import com.google.maps.android.geojson.GeoJsonLayer;
 import com.google.maps.android.geojson.GeoJsonPoint;
 import com.google.maps.android.geojson.GeoJsonPointStyle;
+
+import org.gdg_campinas.treffen.lib.BuildConfig;
 import org.gdg_campinas.treffen.map.util.CachedTileProvider;
 import org.gdg_campinas.treffen.map.util.MarkerLoadingTask;
 import org.gdg_campinas.treffen.map.util.MarkerModel;
+import org.gdg_campinas.treffen.map.util.TileLoadingTask;
 import org.gdg_campinas.treffen.provider.ScheduleContract;
 import org.gdg_campinas.treffen.util.AnalyticsHelper;
 import org.gdg_campinas.treffen.util.LogUtils;
-import org.gdg_campinas.treffen.lib.BuildConfig;
-import org.gdg_campinas.treffen.map.util.TileLoadingTask;
 import org.gdg_campinas.treffen.util.MapUtils;
 import org.gdg_campinas.treffen.util.UIUtils;
-
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 /**
  * Shows a map of the conference venue.

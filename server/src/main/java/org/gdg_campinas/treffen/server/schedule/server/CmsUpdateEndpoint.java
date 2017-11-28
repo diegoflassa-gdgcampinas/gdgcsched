@@ -22,13 +22,14 @@ import com.google.api.server.spi.config.ApiNamespace;
 import com.google.api.server.spi.response.UnauthorizedException;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+
 import org.gdg_campinas.treffen.server.schedule.Config;
 import org.gdg_campinas.treffen.server.schedule.model.JsonDataSource;
 import org.gdg_campinas.treffen.server.schedule.model.JsonDataSources;
 import org.gdg_campinas.treffen.server.schedule.server.cloudstorage.CloudFileManager;
 import org.gdg_campinas.treffen.server.schedule.server.image.ImageUpdater;
-import org.gdg_campinas.treffen.server.userdata.Ids;
 import org.gdg_campinas.treffen.server.schedule.server.input.VendorDynamicInput;
+import org.gdg_campinas.treffen.server.userdata.Ids;
 
 import java.io.IOException;
 

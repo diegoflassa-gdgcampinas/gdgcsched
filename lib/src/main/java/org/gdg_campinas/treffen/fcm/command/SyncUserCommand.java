@@ -22,6 +22,7 @@ import android.content.Intent;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
+
 import org.gdg_campinas.treffen.fcm.FcmCommand;
 import org.gdg_campinas.treffen.sync.TriggerSyncReceiver;
 

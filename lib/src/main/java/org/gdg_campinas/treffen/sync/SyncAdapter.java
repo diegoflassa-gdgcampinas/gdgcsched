@@ -17,11 +17,14 @@
 package org.gdg_campinas.treffen.sync;
 
 import android.accounts.Account;
-import android.content.*;
+import android.content.AbstractThreadedSyncAdapter;
+import android.content.ContentProviderClient;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.SyncResult;
 import android.os.Bundle;
 
 import org.gdg_campinas.treffen.lib.BuildConfig;
-
 import org.gdg_campinas.treffen.util.LogUtils;
 
 import java.util.regex.Pattern;

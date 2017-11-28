@@ -20,6 +20,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseException;
 import com.google.firebase.database.DatabaseReference;
+
 import org.gdg_campinas.treffen.feed.data.FeedMessage;
 
 import static org.gdg_campinas.treffen.util.LogUtils.LOGE;

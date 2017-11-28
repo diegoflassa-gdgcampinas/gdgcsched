@@ -40,12 +40,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.gdg_campinas.treffen.map.util.OverviewSessionLoader;
+import org.gdg_campinas.treffen.map.util.SessionLoader;
+import org.gdg_campinas.treffen.map.util.SingleSessionLoader;
 import org.gdg_campinas.treffen.model.ScheduleItem;
 import org.gdg_campinas.treffen.util.MapUtils;
 import org.gdg_campinas.treffen.util.TimeUtils;
 import org.gdg_campinas.treffen.util.UIUtils;
-import org.gdg_campinas.treffen.map.util.SessionLoader;
-import org.gdg_campinas.treffen.map.util.SingleSessionLoader;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;

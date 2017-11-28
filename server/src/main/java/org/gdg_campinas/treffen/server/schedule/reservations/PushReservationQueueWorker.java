@@ -15,15 +15,17 @@
  */
 package org.gdg_campinas.treffen.server.schedule.reservations;
 
+import org.apache.commons.io.IOUtils;
+
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.logging.Logger;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.apache.commons.io.IOUtils;
 
 /**
  * Worker that call function which pushes updated reservations from RTDB to onsite vendor.

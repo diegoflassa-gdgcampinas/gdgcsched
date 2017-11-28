@@ -17,6 +17,7 @@ package org.gdg_campinas.treffen.server.schedule.server;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
+
 import org.gdg_campinas.treffen.server.schedule.Config;
 
 import java.text.MessageFormat;

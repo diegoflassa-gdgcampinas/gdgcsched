@@ -16,6 +16,7 @@
 package org.gdg_campinas.treffen.feed;
 
 import com.google.firebase.database.DatabaseReference;
+
 import org.gdg_campinas.treffen.feed.data.FeedMessage;
 
 public interface FeedContract {

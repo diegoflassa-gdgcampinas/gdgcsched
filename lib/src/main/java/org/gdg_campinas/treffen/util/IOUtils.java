@@ -18,8 +18,9 @@ package org.gdg_campinas.treffen.util;
 
 import android.content.Context;
 
-import org.gdg_campinas.treffen.lib.BuildConfig;
 import com.turbomanage.httpclient.BasicHttpClient;
+
+import org.gdg_campinas.treffen.lib.BuildConfig;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

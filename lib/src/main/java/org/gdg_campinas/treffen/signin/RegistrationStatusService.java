@@ -15,10 +15,6 @@
  */
 package org.gdg_campinas.treffen.signin;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -34,12 +30,12 @@ import com.google.api.client.http.javanet.NetHttpTransport;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GetTokenResult;
-import org.gdg_campinas.treffen.util.AccountUtils;
 import com.google.samples.apps.iosched.rpc.registration.Registration;
 import com.google.samples.apps.iosched.rpc.registration.model.RegistrationResult;
-import org.gdg_campinas.treffen.util.RegistrationUtils;
 
+import org.gdg_campinas.treffen.util.AccountUtils;
 import org.gdg_campinas.treffen.util.LogUtils;
+import org.gdg_campinas.treffen.util.RegistrationUtils;
 
 import java.io.IOException;
 import java.util.Arrays;

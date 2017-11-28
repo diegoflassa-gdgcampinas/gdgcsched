@@ -18,10 +18,11 @@ package org.gdg_campinas.treffen.sync.userdata;
 
 import android.content.Context;
 
-import org.gdg_campinas.treffen.util.AccountUtils;
-import org.gdg_campinas.treffen.util.LogUtils;
 import com.google.samples.apps.iosched.rpc.userdata.Userdata;
 import com.google.samples.apps.iosched.rpc.userdata.model.UserData;
+
+import org.gdg_campinas.treffen.util.AccountUtils;
+import org.gdg_campinas.treffen.util.LogUtils;
 
 import java.io.IOException;
 import java.util.List;

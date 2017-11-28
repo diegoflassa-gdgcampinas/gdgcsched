@@ -34,8 +34,6 @@ import com.bumptech.glide.request.RequestListener;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 public class ImageLoader {
     private static final String TAG = LogUtils.makeLogTag(ImageLoader.class);
     private static final ModelCache<String, GlideUrl> urlCache = new ModelCache<>(150);

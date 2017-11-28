@@ -20,27 +20,23 @@ import android.content.Context;
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
-import org.gdg_campinas.treffen.util.IOUtils;
-import org.gdg_campinas.treffen.util.LogUtils;
-import org.gdg_campinas.treffen.util.TimeUtils;
-import org.gdg_campinas.treffen.lib.BuildConfig;
-import org.gdg_campinas.treffen.io.model.DataManifest;
-import org.gdg_campinas.treffen.util.HashUtils;
 import com.turbomanage.httpclient.BasicHttpClient;
 import com.turbomanage.httpclient.ConsoleRequestLogger;
 import com.turbomanage.httpclient.HttpResponse;
 import com.turbomanage.httpclient.RequestLogger;
+
+import org.gdg_campinas.treffen.io.model.DataManifest;
+import org.gdg_campinas.treffen.lib.BuildConfig;
+import org.gdg_campinas.treffen.util.HashUtils;
+import org.gdg_campinas.treffen.util.IOUtils;
+import org.gdg_campinas.treffen.util.LogUtils;
+import org.gdg_campinas.treffen.util.TimeUtils;
 
 import java.io.File;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.util.HashSet;
 import java.util.List;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 /**
  * Helper class that fetches conference data from the remote server.

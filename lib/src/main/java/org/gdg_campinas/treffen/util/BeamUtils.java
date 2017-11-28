@@ -16,8 +16,6 @@
 
 package org.gdg_campinas.treffen.util;
 
-import org.gdg_campinas.treffen.provider.ScheduleContract;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -25,6 +23,8 @@ import android.nfc.NdefMessage;
 import android.nfc.NdefRecord;
 import android.nfc.NfcAdapter;
 import android.os.Parcelable;
+
+import org.gdg_campinas.treffen.provider.ScheduleContract;
 
 /**
  * Android Beam helper methods.

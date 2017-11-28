@@ -33,9 +33,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGV;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 /**
  * Helper for building selection clauses for {@link SQLiteDatabase}. Each
  * appended clause is combined using {@code AND}. This class is <em>not</em>

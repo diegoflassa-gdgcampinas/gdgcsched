@@ -27,10 +27,10 @@ import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
 import com.google.firebase.analytics.FirebaseAnalytics;
+
 import org.gdg_campinas.treffen.lib.BuildConfig;
 import org.gdg_campinas.treffen.lib.R;
 import org.gdg_campinas.treffen.settings.SettingsUtils;
-
 
 import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
 

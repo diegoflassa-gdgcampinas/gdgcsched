@@ -17,10 +17,8 @@
 package org.gdg_campinas.treffen.fcm;
 
 import com.google.firebase.messaging.FirebaseMessaging;
-import org.gdg_campinas.treffen.util.LogUtils;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
+import org.gdg_campinas.treffen.util.LogUtils;
 
 public class FcmUtilities {
     private static final String TAG = LogUtils.makeLogTag(FcmUtilities.class);

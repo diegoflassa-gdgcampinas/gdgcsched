@@ -15,9 +15,6 @@
  */
 package org.gdg_campinas.treffen.map.util;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 import android.annotation.SuppressLint;
 
 import com.google.android.gms.maps.model.Tile;

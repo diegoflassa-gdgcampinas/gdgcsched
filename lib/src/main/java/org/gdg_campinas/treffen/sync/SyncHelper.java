@@ -25,7 +25,10 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 
-import org.gdg_campinas.treffen.util.AccountUtils;
+import com.turbomanage.httpclient.BasicHttpClient;
+import com.turbomanage.httpclient.HttpResponse;
+import com.turbomanage.httpclient.RequestLogger;
+
 import org.gdg_campinas.treffen.Config;
 import org.gdg_campinas.treffen.feedback.FeedbackApiHelper;
 import org.gdg_campinas.treffen.feedback.FeedbackSyncHelper;
@@ -38,11 +41,9 @@ import org.gdg_campinas.treffen.settings.SettingsUtils;
 import org.gdg_campinas.treffen.sync.account.Account;
 import org.gdg_campinas.treffen.sync.userdata.AbstractUserDataSyncHelper;
 import org.gdg_campinas.treffen.sync.userdata.UserDataSyncHelperFactory;
+import org.gdg_campinas.treffen.util.AccountUtils;
 import org.gdg_campinas.treffen.util.ConnectivityUtils;
 import org.gdg_campinas.treffen.util.TimeUtils;
-import com.turbomanage.httpclient.BasicHttpClient;
-import com.turbomanage.httpclient.HttpResponse;
-import com.turbomanage.httpclient.RequestLogger;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;

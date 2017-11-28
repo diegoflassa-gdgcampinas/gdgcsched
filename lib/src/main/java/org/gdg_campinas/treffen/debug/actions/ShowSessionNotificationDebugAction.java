@@ -25,8 +25,8 @@ import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
 
 import org.gdg_campinas.treffen.debug.DebugAction;
-import org.gdg_campinas.treffen.map.MapActivity;
 import org.gdg_campinas.treffen.lib.R;
+import org.gdg_campinas.treffen.map.MapActivity;
 import org.gdg_campinas.treffen.provider.ScheduleContract;
 
 /**

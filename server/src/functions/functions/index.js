@@ -82,9 +82,9 @@ const PING_DISCOVERY_URL = 'PING_DISCOVERY_URL';
 
 const GOOGLE_PROVIDER_ID = 'google.com';
 
-const SERVICE_ACCOUNT_EMAIL = 'io2017-backend-dev@appspot.gserviceaccount.com';
+const SERVICE_ACCOUNT_EMAIL = 'event-backend-dev@appspot.gserviceaccount.com';
 
-const REST_BASE_URL = 'https://io2017-backend-dev.firebaseio.com';
+const REST_BASE_URL = 'https://event-backend-dev.firebaseio.com';
 const REST_SESSIONS_URL = REST_BASE_URL + '/sessions.json';
 const REST_SESSION_BASE_URL = REST_BASE_URL + '/sessions/';
 

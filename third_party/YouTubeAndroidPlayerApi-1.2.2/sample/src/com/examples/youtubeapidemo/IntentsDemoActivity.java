@@ -16,8 +16,6 @@
 
 package com.examples.youtubeapidemo;
 
-import com.google.android.youtube.player.YouTubeIntents;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,6 +27,7 @@ import android.widget.TextView;
 
 import com.examples.youtubeapidemo.adapter.DemoArrayAdapter;
 import com.examples.youtubeapidemo.adapter.DemoListViewItem;
+import com.google.android.youtube.player.YouTubeIntents;
 
 import java.util.ArrayList;
 import java.util.List;

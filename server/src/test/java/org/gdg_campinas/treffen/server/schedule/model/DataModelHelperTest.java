@@ -16,17 +16,17 @@
 
 package org.gdg_campinas.treffen.server.schedule.model;
 
-import static org.junit.Assert.assertEquals;
-
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
+
 import org.gdg_campinas.treffen.server.schedule.model.validator.Converters;
 import org.gdg_campinas.treffen.test.TestHelper;
-
 import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
+
+import static org.junit.Assert.assertEquals;
 
 public class DataModelHelperTest {
 

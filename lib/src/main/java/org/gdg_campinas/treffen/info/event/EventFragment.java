@@ -26,15 +26,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.gdg_campinas.treffen.map.MapActivity;
-import org.gdg_campinas.treffen.util.LogUtils;
 import org.gdg_campinas.treffen.info.BaseInfoFragment;
 import org.gdg_campinas.treffen.lib.R;
+import org.gdg_campinas.treffen.map.MapActivity;
 import org.gdg_campinas.treffen.schedule.ScheduleActivity;
+import org.gdg_campinas.treffen.util.LogUtils;
 import org.gdg_campinas.treffen.util.WiFiUtils;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 public class EventFragment extends BaseInfoFragment<EventInfo> implements EventView.EventViewClickListener {
     private static final String TAG = LogUtils.makeLogTag(EventFragment.class);

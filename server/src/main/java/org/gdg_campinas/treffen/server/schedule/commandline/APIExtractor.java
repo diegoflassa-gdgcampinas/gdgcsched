@@ -18,12 +18,13 @@ package org.gdg_campinas.treffen.server.schedule.commandline;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.stream.JsonWriter;
-import org.gdg_campinas.treffen.server.schedule.model.DataExtractor;
-import org.gdg_campinas.treffen.server.schedule.model.JsonDataSources;
-import org.gdg_campinas.treffen.server.schedule.server.input.ExtraInput;
+
 import org.gdg_campinas.treffen.server.schedule.input.fetcher.EntityFetcher;
 import org.gdg_campinas.treffen.server.schedule.input.fetcher.HTTPRemoteFilesEntityFetcher;
 import org.gdg_campinas.treffen.server.schedule.input.fetcher.RemoteFilesEntityFetcherFactory;
+import org.gdg_campinas.treffen.server.schedule.model.DataExtractor;
+import org.gdg_campinas.treffen.server.schedule.model.JsonDataSources;
+import org.gdg_campinas.treffen.server.schedule.server.input.ExtraInput;
 import org.gdg_campinas.treffen.server.schedule.server.input.VendorDynamicInput;
 
 import java.io.IOException;

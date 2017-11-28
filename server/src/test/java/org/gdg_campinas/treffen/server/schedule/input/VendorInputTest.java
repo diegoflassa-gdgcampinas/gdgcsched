@@ -15,19 +15,16 @@
  */
 package org.gdg_campinas.treffen.server.schedule.input;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
+
+import org.gdg_campinas.treffen.server.schedule.input.fetcher.EntityFetcher;
 import org.gdg_campinas.treffen.server.schedule.input.fetcher.VendorAPIEntityFetcher;
 import org.gdg_campinas.treffen.server.schedule.model.InputJsonKeys;
-import org.gdg_campinas.treffen.server.schedule.input.fetcher.EntityFetcher;
 import org.gdg_campinas.treffen.server.schedule.server.input.VendorDynamicInput;
 import org.gdg_campinas.treffen.test.TestHelper;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -36,6 +33,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.Map;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class VendorInputTest {
 

@@ -27,11 +27,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import org.gdg_campinas.treffen.feed.data.FeedMessage;
-import org.gdg_campinas.treffen.util.LogUtils;
 import org.gdg_campinas.treffen.lib.R;
+import org.gdg_campinas.treffen.util.LogUtils;
 
 import static android.support.v7.widget.DividerItemDecoration.VERTICAL;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 public class FeedFragment extends Fragment implements FeedContract.View {
     private static final String TAG = LogUtils.makeLogTag(FeedFragment.class);

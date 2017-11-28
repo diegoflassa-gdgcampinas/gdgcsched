@@ -38,19 +38,14 @@ import org.gdg_campinas.treffen.provider.ScheduleContract;
 import org.gdg_campinas.treffen.provider.ScheduleContractHelper;
 import org.gdg_campinas.treffen.schedule.ScheduleActivity;
 import org.gdg_campinas.treffen.settings.SettingsUtils;
+import org.gdg_campinas.treffen.util.LogUtils;
 import org.gdg_campinas.treffen.util.RegistrationUtils;
 import org.gdg_campinas.treffen.util.TimeUtils;
 import org.gdg_campinas.treffen.util.UIUtils;
 
-import org.gdg_campinas.treffen.util.LogUtils;
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 /**
  * Background service to handle scheduling of starred session notification via

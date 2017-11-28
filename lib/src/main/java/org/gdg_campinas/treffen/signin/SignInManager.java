@@ -31,20 +31,16 @@ import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.GoogleAuthProvider;
-import org.gdg_campinas.treffen.util.AccountUtils;
-import org.gdg_campinas.treffen.sync.userdata.LocalUserDataHelper;
-import org.gdg_campinas.treffen.util.AnalyticsHelper;
-import org.gdg_campinas.treffen.util.RegistrationUtils;
 
+import org.gdg_campinas.treffen.sync.userdata.LocalUserDataHelper;
+import org.gdg_campinas.treffen.util.AccountUtils;
+import org.gdg_campinas.treffen.util.AnalyticsHelper;
 import org.gdg_campinas.treffen.util.LogUtils;
+import org.gdg_campinas.treffen.util.RegistrationUtils;
 
 import java.lang.ref.WeakReference;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 /**
  * Manages sign in and sign out functionality. Designed to be used with an activity, which

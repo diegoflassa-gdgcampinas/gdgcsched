@@ -18,11 +18,8 @@ package org.gdg_campinas.treffen.fcm.command;
 import android.content.Context;
 
 import org.gdg_campinas.treffen.fcm.FcmCommand;
-import org.gdg_campinas.treffen.util.LogUtils;
 import org.gdg_campinas.treffen.feed.FeedState;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGI;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
+import org.gdg_campinas.treffen.util.LogUtils;
 
 /**
  * Received when remote Feed is updated.

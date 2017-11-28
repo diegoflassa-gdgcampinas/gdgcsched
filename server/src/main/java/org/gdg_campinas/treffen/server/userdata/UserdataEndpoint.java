@@ -22,11 +22,12 @@ import com.google.api.server.spi.config.ApiMethod;
 import com.google.api.server.spi.config.ApiNamespace;
 import com.google.api.server.spi.config.Named;
 import com.google.api.server.spi.response.UnauthorizedException;
-import org.gdg_campinas.treffen.server.userdata.db.ReservedSession;
+import com.googlecode.objectify.NotFoundException;
+
 import org.gdg_campinas.treffen.server.schedule.server.GCMPing;
 import org.gdg_campinas.treffen.server.userdata.db.BookmarkedSession;
+import org.gdg_campinas.treffen.server.userdata.db.ReservedSession;
 import org.gdg_campinas.treffen.server.userdata.db.UserData;
-import com.googlecode.objectify.NotFoundException;
 
 import java.util.Map;
 

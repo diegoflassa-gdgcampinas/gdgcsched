@@ -18,10 +18,11 @@ package org.gdg_campinas.treffen.server.schedule.server.input;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParseException;
+
+import org.gdg_campinas.treffen.server.schedule.input.fetcher.EntityFetcher;
 import org.gdg_campinas.treffen.server.schedule.input.fetcher.VendorAPIEntityFetcher;
 import org.gdg_campinas.treffen.server.schedule.model.JsonDataSource;
 import org.gdg_campinas.treffen.server.schedule.model.JsonDataSources;
-import org.gdg_campinas.treffen.server.schedule.input.fetcher.EntityFetcher;
 
 import java.io.IOException;
 import java.util.logging.Level;

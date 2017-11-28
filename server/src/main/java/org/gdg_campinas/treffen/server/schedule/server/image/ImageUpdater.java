@@ -15,9 +15,6 @@
  */
 package org.gdg_campinas.treffen.server.schedule.server.image;
 
-import static com.google.common.base.Strings.isNullOrEmpty;
-import static javax.servlet.http.HttpServletResponse.SC_OK;
-
 import com.google.appengine.api.urlfetch.HTTPResponse;
 import com.google.appengine.api.urlfetch.URLFetchService;
 import com.google.appengine.api.urlfetch.URLFetchServiceFactory;
@@ -29,6 +26,7 @@ import com.google.appengine.tools.cloudstorage.RetryParams;
 import com.google.common.base.Optional;
 import com.google.common.hash.Hashing;
 import com.google.gson.JsonObject;
+
 import org.gdg_campinas.treffen.server.schedule.Config;
 import org.gdg_campinas.treffen.server.schedule.model.InputJsonKeys;
 import org.gdg_campinas.treffen.server.schedule.model.JsonDataSource;
@@ -45,6 +43,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import static com.google.common.base.Strings.isNullOrEmpty;
+import static javax.servlet.http.HttpServletResponse.SC_OK;
 
 /**
  * Fetches images from EvenPoint, stores in GCS, and set up serving URL with App Engine's image

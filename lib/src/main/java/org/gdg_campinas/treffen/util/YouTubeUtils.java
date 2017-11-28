@@ -23,9 +23,6 @@ import android.net.Uri;
 import android.text.TextUtils;
 import android.widget.Toast;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 /**
  * Utility class to deal with YouTube urls and videos.
  */

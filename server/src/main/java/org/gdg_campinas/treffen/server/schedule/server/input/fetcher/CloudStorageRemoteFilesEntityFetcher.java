@@ -18,6 +18,7 @@ package org.gdg_campinas.treffen.server.schedule.server.input.fetcher;
 import com.google.appengine.api.utils.SystemProperty;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+
 import org.gdg_campinas.treffen.server.schedule.Config;
 import org.gdg_campinas.treffen.server.schedule.input.fetcher.EntityFetcher;
 import org.gdg_campinas.treffen.server.schedule.input.fetcher.RemoteJsonHelper;

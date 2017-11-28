@@ -17,11 +17,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import org.gdg_campinas.treffen.util.LogUtils;
 import org.gdg_campinas.treffen.lib.BuildConfig;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
+import org.gdg_campinas.treffen.util.LogUtils;
 
 /**
  * Holds data relevant to the state of the Feed page. Accessible globally

@@ -15,6 +15,15 @@
  */
 package org.gdg_campinas.treffen.server.schedule.model;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonPrimitive;
+
+import org.gdg_campinas.treffen.server.schedule.Config;
+import org.gdg_campinas.treffen.server.schedule.server.ManifestData;
+import org.gdg_campinas.treffen.server.schedule.server.cloudstorage.CloudFileManager;
+
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -24,15 +33,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
-
-import org.gdg_campinas.treffen.server.schedule.Config;
-import org.gdg_campinas.treffen.server.schedule.server.ManifestData;
-import org.gdg_campinas.treffen.server.schedule.server.cloudstorage.CloudFileManager;
-
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonPrimitive;
 
 
 /**

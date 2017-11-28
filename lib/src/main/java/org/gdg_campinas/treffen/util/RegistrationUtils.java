@@ -20,8 +20,8 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.annotation.IntDef;
 
-import org.gdg_campinas.treffen.settings.SettingsUtils;
 import org.gdg_campinas.treffen.lib.BuildConfig;
+import org.gdg_campinas.treffen.settings.SettingsUtils;
 
 import java.lang.annotation.Retention;
 

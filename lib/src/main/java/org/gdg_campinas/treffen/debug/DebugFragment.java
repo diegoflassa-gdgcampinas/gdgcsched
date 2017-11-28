@@ -29,6 +29,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.gdg_campinas.treffen.debug.actions.DisplayUserDataDebugAction;
+import org.gdg_campinas.treffen.debug.actions.ForceAppDataSyncNowAction;
+import org.gdg_campinas.treffen.debug.actions.ForceSyncNowAction;
 import org.gdg_campinas.treffen.debug.actions.ScheduleStarredSessionAlarmsAction;
 import org.gdg_campinas.treffen.debug.actions.ShowSessionNotificationDebugAction;
 import org.gdg_campinas.treffen.debug.actions.TestScheduleHelperAction;
@@ -42,13 +44,8 @@ import org.gdg_campinas.treffen.util.AccountUtils;
 import org.gdg_campinas.treffen.util.LogUtils;
 import org.gdg_campinas.treffen.util.RegistrationUtils;
 import org.gdg_campinas.treffen.util.TimeUtils;
-import org.gdg_campinas.treffen.debug.actions.ForceAppDataSyncNowAction;
-import org.gdg_campinas.treffen.debug.actions.ForceSyncNowAction;
 import org.gdg_campinas.treffen.util.WiFiUtils;
 import org.gdg_campinas.treffen.welcome.WelcomeActivity;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 /**
  * {@link android.app.Activity} displaying debug options so a developer can debug and test. This

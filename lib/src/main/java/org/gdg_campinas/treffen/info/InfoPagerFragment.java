@@ -27,9 +27,9 @@ import android.widget.ImageView;
 
 import org.gdg_campinas.treffen.info.about.AboutInfo;
 import org.gdg_campinas.treffen.info.event.EventInfo;
+import org.gdg_campinas.treffen.info.travel.TravelInfo;
 import org.gdg_campinas.treffen.schedule.ScheduleSingleDayFragment;
 import org.gdg_campinas.treffen.util.AnalyticsHelper;
-import org.gdg_campinas.treffen.info.travel.TravelInfo;
 
 public class InfoPagerFragment extends Fragment implements InfoContract.View {
 

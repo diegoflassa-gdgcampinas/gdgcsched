@@ -16,11 +16,11 @@
 
 package com.examples.youtubeapidemo;
 
+import android.os.Bundle;
+
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerFragment;
-
-import android.os.Bundle;
 
 /**
  * A simple YouTube Android API demo application which shows how to create a simple application that

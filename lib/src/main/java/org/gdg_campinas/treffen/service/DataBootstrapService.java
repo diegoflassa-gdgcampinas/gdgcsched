@@ -21,19 +21,14 @@ import android.content.Intent;
 import android.net.Uri;
 
 import org.gdg_campinas.treffen.io.JSONHandler;
+import org.gdg_campinas.treffen.lib.BuildConfig;
 import org.gdg_campinas.treffen.provider.ScheduleContract;
 import org.gdg_campinas.treffen.settings.SettingsUtils;
+import org.gdg_campinas.treffen.sync.ConferenceDataHandler;
 import org.gdg_campinas.treffen.sync.SyncHelper;
 import org.gdg_campinas.treffen.util.LogUtils;
-import org.gdg_campinas.treffen.lib.BuildConfig;
-import org.gdg_campinas.treffen.sync.ConferenceDataHandler;
 
 import java.io.IOException;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGD;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGI;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
 
 /**
  * An {@code IntentService} that performs the one-time data bootstrap. It takes the prepackaged

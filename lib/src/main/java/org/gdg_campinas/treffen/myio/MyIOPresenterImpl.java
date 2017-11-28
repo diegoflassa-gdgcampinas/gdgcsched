@@ -22,9 +22,9 @@ import android.support.v4.app.LoaderManager.LoaderCallbacks;
 import android.support.v4.content.Loader;
 
 import org.gdg_campinas.treffen.model.ScheduleItem;
-import org.gdg_campinas.treffen.util.CursorModelLoader;
 import org.gdg_campinas.treffen.model.TagMetadata;
 import org.gdg_campinas.treffen.model.TagMetadataCursorTransform;
+import org.gdg_campinas.treffen.util.CursorModelLoader;
 
 import java.util.List;
 

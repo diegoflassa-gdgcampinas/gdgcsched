@@ -16,6 +16,7 @@
 package org.gdg_campinas.treffen.server.schedule.model.validator;
 
 import com.google.gson.JsonPrimitive;
+
 import org.gdg_campinas.treffen.server.schedule.Config;
 
 import java.text.ParseException;

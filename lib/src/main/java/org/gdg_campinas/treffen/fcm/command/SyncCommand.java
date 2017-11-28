@@ -22,15 +22,12 @@ import android.content.Intent;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
+
 import org.gdg_campinas.treffen.fcm.FcmCommand;
 import org.gdg_campinas.treffen.sync.TriggerSyncReceiver;
-
 import org.gdg_campinas.treffen.util.LogUtils;
 
 import java.util.Random;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGI;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 public class SyncCommand extends FcmCommand {
     private static final String TAG = LogUtils.makeLogTag("SyncCommand");

@@ -17,15 +17,13 @@ package org.gdg_campinas.treffen.fcm;
 
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
+
 import org.gdg_campinas.treffen.settings.ConfMessageCardUtils;
 import org.gdg_campinas.treffen.util.AccountUtils;
 import org.gdg_campinas.treffen.util.LogUtils;
 import org.gdg_campinas.treffen.util.RegistrationUtils;
 
 import static org.gdg_campinas.treffen.fcm.FcmUtilities.subscribeTopics;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGI;
-import static org.gdg_campinas.treffen.util.LogUtils.LOGV;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 /**
  * In the event that the current InstanceID token is invalidated, this service is triggered and

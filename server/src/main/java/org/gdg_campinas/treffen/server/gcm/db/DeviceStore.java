@@ -16,12 +16,12 @@
 
 package org.gdg_campinas.treffen.server.gcm.db;
 
-import static com.googlecode.objectify.ObjectifyService.ofy;
-
 import org.gdg_campinas.treffen.server.gcm.db.models.Device;
 
 import java.util.List;
 import java.util.logging.Logger;
+
+import static com.googlecode.objectify.ObjectifyService.ofy;
 
 public class DeviceStore {
     private static final Logger LOG = Logger.getLogger(DeviceStore.class.getName());

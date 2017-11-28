@@ -27,6 +27,7 @@ import android.os.Message;
 import android.os.RemoteException;
 
 import com.google.api.client.util.Charsets;
+
 import org.gdg_campinas.treffen.provider.ScheduleContract;
 import org.gdg_campinas.treffen.util.AccountUtils;
 import org.gdg_campinas.treffen.util.LogUtils;
@@ -38,9 +39,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
-import static org.gdg_campinas.treffen.util.LogUtils.LOGE;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
 
 /**
  * Helper class to process user data stored in the local SQLite db.

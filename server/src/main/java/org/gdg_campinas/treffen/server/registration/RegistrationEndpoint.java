@@ -34,9 +34,11 @@ import com.google.firebase.tasks.OnCompleteListener;
 import com.google.firebase.tasks.Task;
 import com.google.firebase.tasks.TaskCompletionSource;
 import com.google.firebase.tasks.Tasks;
-import org.gdg_campinas.treffen.server.schedule.Config;
+
 import org.gdg_campinas.treffen.server.FirebaseWrapper;
+import org.gdg_campinas.treffen.server.schedule.Config;
 import org.gdg_campinas.treffen.server.userdata.Ids;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -45,8 +47,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.logging.Logger;
+
 import javax.servlet.ServletContext;
-import org.json.JSONObject;
 
 /**
  * A servlet that proxies registration requests to the events server. Returns whether the current

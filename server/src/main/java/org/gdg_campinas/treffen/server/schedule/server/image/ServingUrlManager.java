@@ -15,8 +15,6 @@
  */
 package org.gdg_campinas.treffen.server.schedule.server.image;
 
-import static com.google.common.base.Strings.isNullOrEmpty;
-
 import com.google.appengine.api.datastore.DatastoreService;
 import com.google.appengine.api.datastore.DatastoreServiceFactory;
 import com.google.appengine.api.datastore.Entity;
@@ -32,8 +30,12 @@ import com.google.appengine.api.images.ImagesServiceFactory;
 import com.google.appengine.api.images.ServingUrlOptions;
 import com.google.appengine.tools.cloudstorage.GcsFilename;
 import com.google.common.base.Optional;
-import java.util.List;
+
 import org.joda.time.DateTime;
+
+import java.util.List;
+
+import static com.google.common.base.Strings.isNullOrEmpty;
 
 /**
  * Manages serving URLs for image files in GCS. This class uses Google Cloud Datastore to store

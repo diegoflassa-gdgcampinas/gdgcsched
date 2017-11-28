@@ -33,9 +33,6 @@ import java.util.Formatter;
 import java.util.Locale;
 import java.util.TimeZone;
 
-import static org.gdg_campinas.treffen.util.LogUtils.LOGW;
-import static org.gdg_campinas.treffen.util.LogUtils.makeLogTag;
-
 public class TimeUtils {
     public static final int SECOND = 1000;
     public static final int MINUTE = 60 * SECOND;

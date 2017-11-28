@@ -32,16 +32,16 @@ import android.widget.ImageView;
 import android.widget.ViewSwitcher;
 
 import com.airbnb.lottie.LottieAnimationView;
+
 import org.gdg_campinas.treffen.feedback.SessionFeedbackActivity;
 import org.gdg_campinas.treffen.lib.R;
+import org.gdg_campinas.treffen.model.TagMetadata;
+import org.gdg_campinas.treffen.provider.ScheduleContract;
 import org.gdg_campinas.treffen.schedule.DividerDecoration;
 import org.gdg_campinas.treffen.schedule.ScheduleActivity;
 import org.gdg_campinas.treffen.schedule.ScheduleModel;
 import org.gdg_campinas.treffen.util.AnalyticsHelper;
 import org.gdg_campinas.treffen.util.TimeUtils;
-
-import org.gdg_campinas.treffen.model.TagMetadata;
-import org.gdg_campinas.treffen.provider.ScheduleContract;
 
 import io.doist.recyclerviewext.sticky_headers.StickyHeadersLinearLayoutManager;
 

@@ -16,9 +16,6 @@
 
 package org.gdg_campinas.treffen.server.gcm;
 
-import static com.googlecode.objectify.ObjectifyService.ofy;
-
-import com.google.common.base.Strings;
 import com.google.api.server.spi.auth.common.User;
 import com.google.api.server.spi.config.Api;
 import com.google.api.server.spi.config.ApiMethod;
@@ -28,10 +25,14 @@ import com.google.api.server.spi.config.Named;
 import com.google.api.server.spi.response.BadRequestException;
 import com.google.api.server.spi.response.ForbiddenException;
 import com.google.api.server.spi.response.UnauthorizedException;
+import com.google.common.base.Strings;
+import com.googlecode.objectify.NotFoundException;
+
+import org.gdg_campinas.treffen.server.gcm.db.DeviceStore;
 import org.gdg_campinas.treffen.server.gcm.db.models.Device;
 import org.gdg_campinas.treffen.server.userdata.Ids;
-import org.gdg_campinas.treffen.server.gcm.db.DeviceStore;
-import com.googlecode.objectify.NotFoundException;
+
+import static com.googlecode.objectify.ObjectifyService.ofy;
 
 /**
  * Endpoint for registering and un-registering devices with FCM tokens.
